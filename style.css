@@ -19,13 +19,17 @@ header {
 .leftside {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     width: 30vw;
+    margin-left: 10px;
 }
 
 .rightside {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
     width: 65vw;
     height: 50px;
 }

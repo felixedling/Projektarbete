@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 65vw;
+}

@@ -1,9 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
 header {
+    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
+    background-color: lightgray;
+    padding-top: 0;
 }
 
 .leftside {
@@ -72,10 +82,14 @@ nav a {
     color: #333;
     padding: 12px;
     border-top: 1px solid #ccc;
+
 }
 
 nav a:hover{
-    background: #ddd;
+    border-radius: 10px;
+    background: white;
+    color: orange;
+    text-decoration: underline;
 }
 
   /* Visa menyn när checkboxen är ibockad */

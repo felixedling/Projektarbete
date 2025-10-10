@@ -154,7 +154,7 @@ nav a:hover{
     display: flex;
     justify-content: space-evenly;
     background-color: lightgray;
-    border-top: 2px solid black;
+    border-top: 1px solid black;
 }
 
 .leftside-footer {

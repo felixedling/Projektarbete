@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+    /* HEADER */
 .container-header {
     width: 100vw;
     display: flex;
@@ -145,6 +146,39 @@ nav a:hover{
         border: none;
         padding: 0 12px;
     }
+}
+
+    /* FOOTER */
+.container-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftside-footer {
+    width: 5vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 10vh;
+    margin: 5px;
+    width: 25vw;
+}
+
+.rightside-footer {
+    width: 70vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
 }
 
 /* nav, a {

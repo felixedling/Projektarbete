@@ -14,6 +14,12 @@ header {
     width: 100vw;
     background-color: lightgray;
     padding-top: 0;
+    height: 15vh;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
 }
 
 .leftside {
@@ -23,6 +29,7 @@ header {
     align-items: center;
     width: 30vw;
     margin-left: 10px;
+    font-size: 48px;
 }
 
 .rightside {
@@ -32,6 +39,7 @@ header {
     align-items: center;
     width: 65vw;
     height: 50px;
+    font-size: 24px;
 }
 
 #menu-toggle {
@@ -73,7 +81,8 @@ nav {
     display: none;
     flex-direction: column;
     background: #f2f2f2;
-    position: fixed;
+    position: relative;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -86,6 +95,8 @@ nav a {
     color: #333;
     padding: 12px;
     border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
 
 }
 

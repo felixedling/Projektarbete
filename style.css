@@ -20,7 +20,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
-    background-color: lightgray;
+    background-color: rgb(243, 239, 239);
     padding-top: 0;
     height: 15vh;
     border-bottom: 1px solid black;
@@ -153,7 +153,7 @@ nav a:hover{
 .container-footer {
     display: flex;
     justify-content: space-evenly;
-    background-color: lightgray;
+    background-color: rgb(243, 239, 239);
     border-top: 1px solid black;
 }
 

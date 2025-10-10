@@ -15,6 +15,7 @@
 header {
     position: sticky;
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
@@ -30,19 +31,20 @@ header {
 
 .leftside {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 30vw;
-    /* margin-left: 10px; */
+    margin-left: 10px;
     font-size: 48px;
 }
 
-
 .rightside {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 65vw;
+    width: 60vw;
     height: 50px;
     font-size: 24px;
 }
@@ -130,8 +132,6 @@ nav a:hover{
     .hamburgermenu {
         display: none;
     }
-
-    
     nav {
         display: flex;
         flex-direction: row;

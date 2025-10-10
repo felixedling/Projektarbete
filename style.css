@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+.container-header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 header {
     position: sticky;
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
@@ -24,17 +30,16 @@ header {
 
 .leftside {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 30vw;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-size: 48px;
 }
 
+
 .rightside {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     width: 65vw;
@@ -125,6 +130,8 @@ nav a:hover{
     .hamburgermenu {
         display: none;
     }
+
+    
     nav {
         display: flex;
         flex-direction: row;

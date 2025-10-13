@@ -31,12 +31,6 @@ header {
     width: 75px;
 }
 
-.logo-footer {
-    /* background: orange;
-    border: orange;
-    
-    border-radius: 100%; */
-}
 .leftside {
     display: flex;
     flex-direction: row;

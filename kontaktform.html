@@ -32,19 +32,47 @@
             </div>
         </div>
     </header>
-    <main>
-        <h1>Contact</h1>
+    <main class="container-contact">
+        <h1>Contact form:</h1>
         <div class="divider"></div>
-        <div class="contact-img">
-            <figure>
-                <img src="images/Kontaktsida bild.JPG" height="350px" width="100%vw" alt="WorkBots Headquarters">
-                <figcaption>WorkBots Headquarters, Stockholm, Sweden</figcaption>
-            </figure>
-        </div>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="fname">Enter your first name:</label>
+                <input type="text" id="fname" name="fname" required placeholder="First name.">
+            </div>
 
-        <div class="company-info">
+            <div class="form-group">
+                <label for="lname">Enter your last name:</label>
+                <input type="text" id="lname" name="lname" required placeholder="Last name.">
+            </div>
 
-        </div>
+            <div class="form-group">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required placeholder="Email.">
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company name (Optional)</label>
+                <input type="text" id="company" name="company" placeholder="Company name">
+            </div>
+
+            <div class="form-group">
+                <label>Subject:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="subject" value="products"> Products</label>
+                    <label><input type="checkbox" name="subject" value="pricing"> Pricing</label>
+                    <label><input type="checkbox" name="subject" value="production"> Production</label>
+                    <label><input type="checkbox" name="subject" value="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message">Type your message here...</textarea>
+            </div>
+
+            <button class="contactbtn" type="submit">Submit</button>
+        </form>
 
     </main>
     <footer>

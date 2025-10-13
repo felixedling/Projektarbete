@@ -149,6 +149,12 @@ nav a:hover{
     }
 }
 
+.contact-img {
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}
+
 .contact-form {
 display: flex;
 flex-direction: column;
@@ -156,6 +162,10 @@ align-items: center;
 max-width: 400px;
 margin: 0 auto;
 gap: 1rem;
+}
+
+.divider {
+    height: 25px;
 }
 
 .form-group {

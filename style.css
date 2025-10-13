@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+h1,h2,h3 {
+    font-family: roboto;
+}
+
+p,a {
+    font-family: "roboto mono";
+}
+
     /* HEADER */
 .container-header {
     width: 100vw;
@@ -38,7 +46,7 @@ header {
     align-items: center;
     width: 30vw;
     margin-left: 10px;
-    font-size: 48px;
+    font-size: 34px;
 }
 
 .rightside {
@@ -48,7 +56,7 @@ header {
     align-items: center;
     width: 60vw;
     height: 50px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #menu-toggle {
@@ -259,10 +267,10 @@ gap: 1rem;
 }
 
 .aboutpicture p {
-    max-width: 250px;
+    max-width: 270px;
     margin-top: 40px;
     margin-left: 40px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media (600px<=width<=768px) {
@@ -270,8 +278,8 @@ gap: 1rem;
         height: 370px;
     }
     .aboutpicture p {
-        font-size: 24px;
-        max-width: 300px;
+        font-size: 20px;
+        max-width: 340px;
     }
 }
 
@@ -281,8 +289,8 @@ gap: 1rem;
         margin: 0px;
     }
     .aboutpicture p {
-        font-size: 32px;
-        max-width: 400px;
+        font-size: 28px;
+        max-width: 480px;
     }
 }
 
@@ -310,7 +318,6 @@ gap: 1rem;
     flex-wrap: wrap;
     margin: 20px;
     gap: 10px;
-    max-height: 500px;
 }
 
 .joinus {

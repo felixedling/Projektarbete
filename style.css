@@ -149,6 +149,49 @@ nav a:hover{
     }
 }
 
+.contact-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 400px;
+margin: 0 auto;
+gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group label{
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.contact-form input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.contactbtn {
+    background-color: #f4a63c;
+    color: black;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 1.3rem;
+}
+
     /* FOOTER */
 .container-footer {
     display: flex;

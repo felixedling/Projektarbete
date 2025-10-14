@@ -650,6 +650,8 @@ gap: 1rem;
     .ourproducts {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .bot-container {
         width: 30vw;

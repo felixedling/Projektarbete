@@ -410,6 +410,261 @@ gap: 1rem;
     }
 }
 
+/*Products*/
+.workforce {
+    color: orange;
+}
+
+.titleproducts {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.undertitleproducts {
+    text-align: center;
+    margin: 20px;
+}
+
+.bot-container {
+    background-color: #f3f3f3;
+    margin: 20px 20px 50px 20px;
+    border-radius: 20px;
+}
+
+.bot-picture-cargo {
+    background-image: url(images/cargo-bot.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-radius: 20px;
+}
+
+.botarrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.leftsidecargobot {
+    margin: 30px 0 0 40px;
+}
+
+.leftsidecargobot p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.rightsidebot {
+    margin: 30px 40px 0 0;
+}
+
+.pil-vänster {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.pil-höger {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.description-cargobot {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+    font-size: 1.2rem;
+}
+
+.description-cargobot p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.capacity {
+    border-bottom: 3px solid white;
+    margin: 7px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.capacity p {
+    margin-bottom: 5px;
+}
+
+.operatinghours {
+    border-bottom: 3px solid white;
+    margin: 5px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.operatinghours p {
+    margin-bottom: 5px;
+}
+
+.navigation {
+    border-bottom: 3px solid white;
+    margin: 5px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation p {
+    margin-bottom: 5px;
+}
+
+.speed {
+    border-bottom: 3px solid white;
+    margin: 5px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.speed p {
+    margin-bottom: 5px;
+}
+
+.customizations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.customizations button {
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+    color: white;
+    font-family: "roboto mono";
+}
+
+.bot-picture-assembly {
+    background-image: url(images/assembly-bot.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-radius: 20px;
+}
+
+.leftsideassemblybot {
+    margin: 30px 0 0 40px;
+}
+
+.leftsideassemblybot p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-assemblybot {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+    font-size: 1.2rem;
+}
+
+.description-assemblybot p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.bot-picture-construction {
+    background-image: url(images/construction-bot.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-radius: 20px;
+}
+
+.leftsideconstructionbot {
+    margin: 30px 0 0 40px;
+}
+
+.leftsideconstructionbot p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-constructionbot {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+    font-size: 1.2rem;
+}
+
+.description-constructionbot p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+@media (min-width:600px) {
+    .bot-picture-cargo {
+        background-position: top;
+    }
+    .bot-picture-assembly {
+        background-position: top;
+    }
+    .bot-picture-construction {
+        background-position: top;
+    }
+    .ourproducts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .bot-container {
+        width: 85vw;
+    }
+}
+
+@media (min-width:768px) {
+    .ourproducts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .bot-container {
+        width: 70vw;
+    }
+}
+
+@media (min-width:992px) {
+    .ourproducts {
+        display: flex;
+        flex-direction: row;
+    }
+    .bot-container {
+        width: 30vw;
+    }
+}
+
+.productscontact {
+    text-align: center;
+    margin: 20px;
+}
+
+.productscontact a {
+    color: orange;
+}
+
 /* footer #2
 .container-footer2 {
     background-color: rgb(23, 49, 84);

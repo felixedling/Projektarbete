@@ -37,6 +37,7 @@ header {
 .logo {
     height: 75px;
     width: 75px;
+    margin-left: 10px;
 }
 
 .leftside {
@@ -46,7 +47,6 @@ header {
     align-items: center;
     width: 30vw;
     margin-left: 10px;
-    margin-right: 10px;
     font-size: 34px;
 }
 

@@ -438,7 +438,8 @@ gap: 1rem;
     background-position: center;
     height: 300px;
     color: white;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .botarrows {
@@ -480,7 +481,6 @@ gap: 1rem;
 .description-cargobot {
     border-bottom: 3px solid white;
     margin: 14px 14px 0 14px;
-    font-size: 1.2rem;
 }
 
 .description-cargobot p {
@@ -488,7 +488,7 @@ gap: 1rem;
     text-align: center;
 }
 
-.capacity {
+.products-description.description1 {
     border-bottom: 3px solid white;
     margin: 7px 10px 0 10px;
     display: flex;
@@ -496,11 +496,11 @@ gap: 1rem;
     justify-content: space-between;
 }
 
-.capacity p {
+.products-description.description1 p {
     margin-bottom: 5px;
 }
 
-.operatinghours {
+.products-description {
     border-bottom: 3px solid white;
     margin: 5px 10px 0 10px;
     display: flex;
@@ -508,32 +508,13 @@ gap: 1rem;
     justify-content: space-between;
 }
 
-.operatinghours p {
+.products-description p {
     margin-bottom: 5px;
+    font-size: 0.8rem;
 }
 
-.navigation {
-    border-bottom: 3px solid white;
-    margin: 5px 10px 0 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.navigation p {
-    margin-bottom: 5px;
-}
-
-.speed {
-    border-bottom: 3px solid white;
-    margin: 5px 10px 0 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.speed p {
-    margin-bottom: 5px;
+.products-description p:last-of-type {
+    font-weight: 700;
 }
 
 .customizations {
@@ -558,7 +539,8 @@ gap: 1rem;
     background-position: center;
     height: 300px;
     color: white;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .leftsideassemblybot {
@@ -575,7 +557,6 @@ gap: 1rem;
 .description-assemblybot {
     border-bottom: 3px solid white;
     margin: 14px 14px 0 14px;
-    font-size: 1.2rem;
 }
 
 .description-assemblybot p {
@@ -589,7 +570,8 @@ gap: 1rem;
     background-position: center;
     height: 300px;
     color: white;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .leftsideconstructionbot {
@@ -606,7 +588,6 @@ gap: 1rem;
 .description-constructionbot {
     border-bottom: 3px solid white;
     margin: 14px 14px 0 14px;
-    font-size: 1.2rem;
 }
 
 .description-constructionbot p {
@@ -666,6 +647,120 @@ gap: 1rem;
 
 .productscontact a {
     color: orange;
+}
+
+.customizationsbutton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bot-picture-dexgrip {
+    background-image: url(images/dex-grip.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.leftsidedexgrip {
+    margin: 30px 0 0 40px;
+}
+
+.leftsidedexgrip p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-dexgrip {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-dexgrip p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.basemodel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.basemodel button {
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+    color: white;
+    font-family: "roboto mono";
+}
+
+.bot-picture-vision {
+    background-image: url(images/vision.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.leftsidevision {
+    margin: 30px 0 0 40px;
+}
+
+.leftsidevision p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-vision {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-vision p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.bot-picture-stepper {
+    background-image: url(images/stepper.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.leftsidestepper {
+    margin: 30px 0 0 40px;
+}
+
+.leftsidestepper p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-stepper {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-stepper p {
+    margin-bottom: 7px;
+    text-align: center;
 }
 
 /* footer #2

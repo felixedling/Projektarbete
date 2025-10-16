@@ -6,12 +6,12 @@
 
 h1,h2,h3 {
     font-family: roboto;
-    font-size: 24pt;
+    font-size: 24px;
 }
 
 p,a {
     font-family: "roboto mono";
-    font-size: 16pt;
+    font-size: 16px;
 }
 
     /* HEADER */
@@ -419,10 +419,16 @@ gap: 1rem;
 
 /* Ändringar Erik */
 
-.frontpage-part1 {
+.frontpage-part1-bg {
     background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
     width: 100vw;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frontpage-part1-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -483,7 +489,13 @@ gap: 1rem;
 }
 
 @media (min-width: 768px) {
-    .frontpage-part1 {
+
+    .frontpage-part1-bg {
+    background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
+    width: 100vw;
+    }
+
+    .frontpage-part1-container {
     background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
     width: 100vw;
     height: 90vh; /*FRÅGA BRANDON: hur skriver man 100vh-50px?*/

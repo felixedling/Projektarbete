@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 h1,h2,h3 {
@@ -21,7 +22,6 @@ p,a {
     justify-content: space-between;
     align-items: center;
 }
-
 
 header {
     position: sticky;
@@ -170,52 +170,62 @@ nav a:hover{
 }
 
 .container-contact {
-    text-align: center;
-    padding: 20px;
-}
-
-.contact {
-    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* contact page img */
 .contact-img {
-    text-decoration: underline;
+    font-family: roboto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.contact-size {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
+}
+
+figcaption {
+    text-align: center;
+    opacity: 25%;
+    font-size: 12px;
+}
+
 .contact-details {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
     flex-direction: column;
-
-}
-
-.contactbtn-form{
-    background-color: #f4a63c;
-    color: black;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-bottom: 1.3rem;
-    width: 200px;
-}
-
-.contactbtn-form {
     justify-content: center;
 }
 
-.contactbtn-form a {
-    text-decoration: none;
-    color: #333;
+.social-media a:hover {
+    color: #ff9505;
+}
+
+.contact-details a:hover {
+    color: orange;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.above-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
 }
 
 .contact-form {
@@ -255,7 +265,34 @@ gap: 1rem;
     justify-content: center;
 }
 
+.qnabtn {
+    background-color: #f4a63c;
+    color: black;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    width: 215px;
+    
+}
+
 .contactbtn {
+    background-color: #f4a63c;
+    color: black;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 1.3rem;
+    text-decoration: none;
+    /* margin: 25px; */
+}
+
+.contactbtn a{
     background-color: #f4a63c;
     color: black;
     border: none;
@@ -264,7 +301,9 @@ gap: 1rem;
     cursor: pointer;
     border-radius: 4px;
     margin-bottom: 1.3rem;
+    text-decoration: none;
 }
+
 
     /* FOOTER */
 .container-footer {

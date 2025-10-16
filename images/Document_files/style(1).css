@@ -315,28 +315,15 @@ gap: 1rem;
 
 .container-qna {
     margin: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 .question {
-    margin: 25px;
-    display: flex;
-    justify-content: flex-start;
     margin: 25px;
     /* font-weight: bold; */
 }
 
 .answer {
     margin: 25px;
-
-}
-
-.homebtn {
-    margin: 25px;
-    display: flex;
-    justify-content: center;
 }
 
 

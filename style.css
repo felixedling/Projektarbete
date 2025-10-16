@@ -20,9 +20,9 @@ p,a {
 
     /* HEADER */
 .container-header {
-    width: 310px;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -31,20 +31,18 @@ header {
     position: sticky;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100vw;
     background-color: rgb(243, 239, 239);
     padding-top: 0;
-    margin-bottom: 0;
-    height: 50px;
+    height: 15vh;
     border-bottom: 1px solid black;
 }
 
 .logo {
-    height: 25px;
-    width: 25px;
-    margin-right: 25px;
+    height: 75px;
+    width: 75px;
 }
 
 .leftside {
@@ -52,7 +50,9 @@ header {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 25vw;
+    width: 30vw;
+    margin-left: 10px;
+    font-size: 34px;
 }
 
 .rightside {
@@ -70,6 +70,7 @@ header {
     display: none;
 }
 
+  /* Hamburgerknappen */
 .hamburgermenu {
     width: 30px;
     cursor: pointer;
@@ -81,7 +82,7 @@ header {
 .hamburgermenu .bar1,
 .hamburgermenu .bar2,
 .hamburgermenu .bar3 {
-    height: 2px;
+    height: 3px;
     width: 100%;
     background-color: #333;
     margin: 6px 0;
@@ -103,7 +104,6 @@ header {
 nav {
     display: none;
     flex-direction: column;
-    /* "align-items: center" här? */
     background: #f2f2f2;
     position: fixed;
     top: 0;
@@ -163,10 +163,6 @@ nav a:hover{
         padding: 0 12px;
         font-size: 1rem;
     }
-
-    .container-header { 
-    width: 670px; 
-}
     
 }
 
@@ -176,6 +172,7 @@ nav a:hover{
 }
 
 .contact {
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,6 +214,7 @@ nav a:hover{
     text-decoration: none;
     color: #333;
 }
+
 
 .contact-form {
 display: flex;
@@ -320,7 +318,7 @@ gap: 1rem;
 }
 
 .aboutpicture {
-    background-image: url(https://cdn.discordapp.com/attachments/1414675453058355290/1427266586628198480/9k.png?ex=68ee3d17&is=68eceb97&hm=32575f33bb4125aaa742974a576aac5b1b43382f100e19c78aff6d06a899b1e7&);
+    background-image: url(images/aboutpicture.png);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -421,38 +419,42 @@ gap: 1rem;
     }
 }
 
-/* Ändringar Erik */
+/*Products*/
+.workforce {
+    color: orange;
+}
 
-.frontpage-part1 {
-    background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-    width: 100vw;
+.titleproducts {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.undertitleproducts {
+    text-align: center;
+    margin: 20px;
+}
+
+.bot-container {
+    background-color: #f3f3f3;
+    margin: 20px 20px 50px 20px;
+    border-radius: 20px;
+}
+
+.bot-picture-cargo {
+    background-image: url(images/cargo-bot.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.botarrows {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.frontpage-part1-text {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.frontpage-bot {
-    width: 310px;
-    border-radius: 7.5%;
-    margin-right: 25px;
-    margin-left: 25px;
-}   
-
-.frontpage-part1 h1 {
-    width: 310px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 24px;
-}
-
-.p-size {
-    width: 310px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .frontpage-part1 p {
@@ -460,71 +462,315 @@ gap: 1rem;
     font-size: 1rem;
 }
 
-.frontpage-part1 input {
-    margin-bottom: 25px;
+.leftsidecargobot p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
 }
 
-.demo-button {
-    width: 310px;
-    height: 50px;
-    margin-bottom: 25px;
-    border-radius: 25px;
-    background-color: #ff9505;
-    border: 3px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.rightsidebot {
+    margin: 30px 40px 0 0;
 }
 
-.demo-button-text {
+.pil-vänster {
+    background: none;
+    border: none;
     color: white;
     font-size: 0,9rem;
 }
 
-.demo-button-text:hover {
+.pil-höger {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.description-cargobot {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-cargobot p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.products-description.description1 {
+    border-bottom: 3px solid white;
+    margin: 7px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.products-description.description1 p {
+    margin-bottom: 5px;
+}
+
+.products-description {
+    border-bottom: 3px solid white;
+    margin: 5px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.products-description p {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.products-description p:last-of-type {
+    font-weight: 700;
+}
+
+.customizations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.customizations button {
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+    color: white;
+    font-family: "roboto mono";
+}
+
+.bot-picture-assembly {
+    background-image: url(images/assembly-bot.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.leftsideassemblybot {
+    margin: 30px 0 0 40px;
+}
+
+.leftsideassemblybot p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-assemblybot {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-assemblybot p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.bot-picture-construction {
+    background-image: url(images/construction-bot.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.leftsideconstructionbot {
+    margin: 30px 0 0 40px;
+}
+
+.leftsideconstructionbot p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-constructionbot {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-constructionbot p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+@media (min-width:600px) {
+    .bot-picture-cargo {
+        background-position: top;
+    }
+    .bot-picture-assembly {
+        background-position: top;
+    }
+    .bot-picture-construction {
+        background-position: top;
+    }
+    .ourproducts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .bot-container {
+        width: 85vw;
+    }
+}
+
+@media (min-width:768px) {
+    .ourproducts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .bot-container {
+        width: 70vw;
+    }
+}
+
+@media (min-width:992px) {
+    .ourproducts {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .bot-container {
+        width: 30vw;
+    }
+}
+
+.productscontact {
+    text-align: center;
+    margin: 20px;
+}
+
+.productscontact a {
+    color: orange;
+}
+
+.customizationsbutton:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 
-@media (min-width: 768px) {
-    .frontpage-part1 {
-    background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-    width: 100vw;
-    height: 90vh; /*FRÅGA BRANDON: hur skriver man 100vh-50px?*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-
-.frontpage-part1-text {
-    margin-left: 25px;
-    margin-right: 25px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-.frontpage-bot {
-
-    width: 310px;
-    border-radius: 7.5%;
-    margin-right: 25px;
-    margin-left: 25px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }   
-
-.frontpage-part1 h1 {
-    width: 310px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 24px;
-    }
+.bot-picture-dexgrip {
+    background-image: url(images/dex-grip.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-/*Ändringar Erik slut*/
+.leftsidedexgrip {
+    margin: 30px 0 0 40px;
+}
+
+.leftsidedexgrip p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-dexgrip {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-dexgrip p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.basemodel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.basemodel button {
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+    color: white;
+    font-family: "roboto mono";
+}
+
+.bot-picture-vision {
+    background-image: url(images/vision.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.leftsidevision {
+    margin: 30px 0 0 40px;
+}
+
+.leftsidevision p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-vision {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-vision p {
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.bot-picture-stepper {
+    background-image: url(images/stepper.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.leftsidestepper {
+    margin: 30px 0 0 40px;
+}
+
+.leftsidestepper p {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 2px 10px 2px 10px;
+}
+
+.description-stepper {
+    border-bottom: 3px solid white;
+    margin: 14px 14px 0 14px;
+}
+
+.description-stepper p {
+    margin-bottom: 7px;
+    text-align: center;
+}
 
 /* footer #2
 .container-footer2 {

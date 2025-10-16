@@ -330,7 +330,11 @@ gap: 1rem;
 
 .answer {
     margin: 25px;
+}
 
+.qnabtn a{
+    text-decoration: none;
+    color: black;
 }
 
 .homebtn {

@@ -223,6 +223,10 @@ figcaption {
 
 }
 
+.container-grey {
+    background: #F3F3F3;
+}
+
 .above-btn {
     display: flex;
     justify-content: center;

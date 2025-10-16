@@ -171,8 +171,6 @@ nav a:hover{
 
 /* Kontaktsida start */
 .container-contact {
-    margin: 25px;
-    text-align: center;
     display: flex;
     flex-direction: column;
 }

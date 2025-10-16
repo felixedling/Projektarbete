@@ -4,14 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 12px;
+}
+
 h1,h2,h3 {
     font-family: roboto;
-    font-size: 24pt;
+    font-size: 1,5rem;
 }
 
 p,a {
     font-family: "roboto mono";
-    font-size: 16pt;
+    font-size: 1rem;
 }
 
     /* HEADER */
@@ -58,7 +62,7 @@ header {
     align-items: center;
     width: 60vw;
     height: 50px;
-    font-size: 18px;
+    font-size: 1,2rem;
     margin-right: 0px;
 }
 
@@ -157,7 +161,7 @@ nav a:hover{
     nav a {
         border: none;
         padding: 0 12px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .container-header { 
@@ -453,7 +457,7 @@ gap: 1rem;
 
 .frontpage-part1 p {
     margin-bottom: 25px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .frontpage-part1 input {
@@ -475,7 +479,7 @@ gap: 1rem;
 
 .demo-button-text {
     color: white;
-    font-size: 14px;
+    font-size: 0,9rem;
 }
 
 .demo-button-text:hover {

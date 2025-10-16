@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
 }
 
 h1,h2,h3 {
@@ -172,6 +171,8 @@ nav a:hover{
 
 /* Kontaktsida start */
 .container-contact {
+    margin: 25px;
+    text-align: center;
     display: flex;
     flex-direction: column;
 }

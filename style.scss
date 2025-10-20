@@ -294,33 +294,62 @@ nav a:hover{
 .container-contact {
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;   
+        
+        h1 {
+        margin: 25px;
+        text-align: center;
+        }
+        .background-contact {
+        background-image: url(./images/frontpage-bg.png);
+        background-size: cover;
+        background-position: right;
+        }
+        .background-form {
+        background-image: url(./images/contact-form-pic.png);
+                background-size: cover;
+                background-position: right;
+        }
         .contact-img {
         font-family: roboto;
         display: flex;
         justify-content: center;
-        align-items: center;
+        margin: 25px;
     }
+
+        .contact-img figure {
+        margin: 0;
+        text-align: center;
+        }
         .contact-pic {
-        padding: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 310px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // height: 310px;
+            width: 100%;
+            max-width: 720px;   /* nice size on mobile/tablet */
+            height: auto;
+            display: block;
+            margin: 0 auto;
     }
         figcaption {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: .5rem;
         text-align: center;
-        opacity: 25%;
-        font-size: 12px;
     }
         .contact-details {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
+        margin-left: 15px;
     }
         .social-media {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 15px;
     }
     .social-media a {
         color: #333;
@@ -340,11 +369,18 @@ nav a:hover{
     }
         .container-grey {
         background: #F3F3F3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
         .above-btn {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        font-size: 16px;
+        align-items: center;
+        font-size: 12px;
+        margin: 15px;
     }
         .contact-form {
         display: flex;
@@ -432,19 +468,24 @@ nav a:hover{
 
 /* Q&A sida start */
 .container-qna {
-    margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-image: url(./images/frontpage-bg.png);
+    background-size: cover;
+    background-position: right;
+        h1 {
+            margin: 25px;
+            text-align: center;
+        }
         .question {
-        margin: 25px;
         display: flex;
         justify-content: flex-start;
-        margin: 25px;
+        margin: 10px;
         /* font-weight: bold; */
     }
     .answer {
-        margin: 25px;
+        margin: 10px;
     }
     .qnabtn a{
         text-decoration: none;

@@ -149,6 +149,23 @@ nav a:hover {
 .container-contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-contact h1 {
+  margin: 25px;
+  text-align: center;
+}
+.container-contact .background-contact {
+  background-image: url(./images/frontpage-bg.png);
+  background-size: cover;
+  background-position: right;
+}
+.container-contact .background-form {
+  background-image: url(./images/contact-form-pic.png);
+  background-size: cover;
+  background-position: right;
 }
 .container-contact .contact-img {
   font-family: roboto;
@@ -164,6 +181,9 @@ nav a:hover {
   height: 310px;
 }
 .container-contact figcaption {
+  font-size: 0.6rem;
+  color: #666;
+  margin-top: 0.5rem;
   text-align: center;
   opacity: 25%;
   font-size: 12px;
@@ -202,16 +222,21 @@ nav a:hover {
   justify-content: center;
   font-size: 16px;
 }
+.container-contact .formbox {
+  background: #D9D9D9;
+  width: 500px;
+  padding-top: 25px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
 .container-contact .contact-form {
+  font-family: "roboto mono";
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 400px;
   margin: 0 auto;
   gap: 1rem;
-}
-.container-contact .divider {
-  height: 25px;
 }
 .container-contact .form-group {
   display: flex;
@@ -220,7 +245,7 @@ nav a:hover {
 }
 .container-contact .form-group label {
   margin-bottom: 0.3rem;
-  font-weight: bold;
+  font-weight: medium;
 }
 .container-contact .contact-form input, .container-contact textarea {
   padding: 0.5rem;
@@ -230,6 +255,7 @@ nav a:hover {
 }
 .container-contact .checkbox-group {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   justify-content: center;
 }
@@ -287,6 +313,16 @@ nav a:hover {
   flex-direction: column;
   justify-content: flex-start;
 }
+.container-qna .qnabackground {
+  background-image: url(./images/frontpage-bg.png);
+  background-size: cover;
+  background-position: right;
+  width: 100vw;
+}
+.container-qna h1 {
+  margin: 25px;
+  text-align: center;
+}
 .container-qna .question {
   margin: 25px;
   display: flex;
@@ -334,6 +370,101 @@ nav a:hover {
 }
 
 /* Q&A sida slut */
+.toptext {
+  text-align: center;
+}
+.toptext a {
+  color: #ff9505;
+  display: flex;
+  text-decoration: none;
+}
+.toptext .projects {
+  color: #fe5c02;
+}
+.toptext .titleprojects {
+  text-align: center;
+  margin-top: 10px;
+}
+.toptext .belowtitle {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  font-weight: normal;
+}
+
+.imgbox {
+  display: flex;
+  justify-content: center;
+}
+.imgbox .imgclass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgbox .imgclass .projectimg {
+  width: 400px;
+}
+
+.kpi-card {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.kpi-card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin-top: 25px;
+  font-size: 10px;
+  background-color: rgb(244, 241, 241);
+  border-radius: 8px;
+  width: 115px;
+  height: 12vh;
+}
+.kpi-card p {
+  font-size: 10px;
+}
+
+.testbox {
+  display: flex;
+  justify-content: center;
+}
+
+.grey-container {
+  background: #D9D9D9;
+  width: 478px;
+  margin: 25px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.grey-container .challenge {
+  margin: 25px;
+  font-size: 1rem;
+}
+.grey-container li {
+  font-family: "roboto mono";
+}
+.grey-container p {
+  font-size: 1rem;
+}
+.grey-container .solution {
+  padding-left: 25px;
+  font-size: 1rem;
+}
+.grey-container .results {
+  margin: 25px;
+  font-size: 1rem;
+}
+.grey-container .results .checklist {
+  list-style: none;
+}
+.grey-containercheck {
+  color: #ff9505;
+}
+
 /* FOOTER START */
 .container-footer {
   display: flex;

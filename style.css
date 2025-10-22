@@ -537,7 +537,7 @@ nav a:hover {
 
 /* FOOTER END */
 /* ABOUT START */
-.aboutpicture {
+.about-container .aboutpicture {
   background-image: url(images/aboutpicture.png);
   background-size: cover;
   background-position: center;
@@ -549,27 +549,22 @@ nav a:hover {
   align-items: flex-start;
   margin: 20px;
 }
-
-.aboutpicture p {
+.about-container .aboutpicture p {
   max-width: 270px;
   margin-top: 40px;
   margin-left: 40px;
   font-size: 20px;
 }
-
-.omosstext {
+.about-container .omosstext {
   margin: 25px;
 }
-
-.omosstext p {
+.about-container .omosstext p {
   margin-top: 20px;
 }
-
-.personal h2 {
+.about-container .personal h2 {
   margin: 25px;
 }
-
-.bilderpersonal {
+.about-container .bilderpersonal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -578,49 +573,41 @@ nav a:hover {
   gap: 10px;
   background-color: rgb(243, 239, 239);
 }
-
-.bilderpersonal img {
+.about-container .bilderpersonal img {
   width: 150px;
   height: 150px;
 }
-
-.joinus {
+.about-container .joinus {
   margin: 25px;
 }
-
-.person1, .person2, .person3, .person4, .person5, .person6 {
+.about-container .person1, .about-container .person2, .about-container .person3, .about-container .person4, .about-container .person5, .about-container .person6 {
   text-align: center;
   background-color: rgb(23, 49, 84);
   color: white;
 }
-
-.joinus a {
+.about-container .joinus a {
   color: #ff9505;
 }
 
 /* ABOUT END */
-/* PRODUCTS START*/
-.workforce {
+/* PRODUCTS & CUSTOMIZATION START*/
+.products-container .workforce {
   color: #ff9505;
 }
-
-.titleproducts {
+.products-container .titleproducts {
   text-align: center;
   margin-top: 10px;
 }
-
-.undertitleproducts {
+.products-container .undertitleproducts {
   text-align: center;
   margin: 25px;
 }
-
-.bot-container {
+.products-container .bot-container {
   background-color: rgb(243, 239, 239);
   margin: 20px 25px 50px 25px;
   border-radius: 20px;
 }
-
-.bot-picture-cargo {
+.products-container .bot-picture-cargo {
   background-image: url(images/cargo-bot.jpg);
   background-size: cover;
   background-position: center;
@@ -629,88 +616,73 @@ nav a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.botarrows {
+.products-container .botarrows {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
-
-.frontpage-part1 p {
+.products-container .frontpage-part1 p {
   margin-bottom: 25px;
   font-size: 1rem;
 }
-
-.leftsidecargobot {
+.products-container .leftsidecargobot {
   margin: 30px 0 0 40px;
 }
-
-.leftsidecargobot p {
+.products-container .leftsidecargobot p {
   border: 2px solid white;
   border-radius: 10px;
   background-color: #ff9505;
   padding: 2px 10px 2px 10px;
 }
-
-.rightsidebot {
+.products-container .rightsidebot {
   margin: 30px 40px 0 0;
 }
-
-.pil-vänster {
+.products-container .pil-vänster {
   background: none;
   border: none;
   color: white;
   font-size: 0, 9rem;
 }
-
-.pil-höger {
+.products-container .pil-höger {
   background: none;
   border: none;
   color: white;
   cursor: pointer;
 }
-
-.description-cargobot {
+.products-container .description-cargobot {
   border-bottom: 3px solid white;
   margin: 14px 14px 0 14px;
 }
-
-.description-cargobot p {
+.products-container .description-cargobot p {
   margin-bottom: 7px;
   text-align: center;
 }
-
-.products-description.description1 {
+.products-container .products-description.description1 {
   border-bottom: 3px solid white;
   margin: 7px 10px 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-.products-description.description1 p {
+.products-container .products-description.description1 p {
   margin-bottom: 5px;
 }
-
-.products-description {
+.products-container .products-description {
   border-bottom: 3px solid white;
   margin: 5px 10px 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-.products-description p {
+.products-container .products-description p {
   margin-bottom: 5px;
   font-size: 0.8rem;
 }
-
-.products-description p:last-of-type {
+.products-container .products-description p:last-of-type {
   font-weight: 700;
 }
-
-.bot-picture-assembly {
+.products-container .bot-picture-assembly {
   background-image: url(images/assembly-bot.jpg);
   background-size: cover;
   background-position: center;
@@ -719,29 +691,24 @@ nav a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.leftsideassemblybot {
+.products-container .leftsideassemblybot {
   margin: 30px 0 0 40px;
 }
-
-.leftsideassemblybot p {
+.products-container .leftsideassemblybot p {
   border: 2px solid white;
   border-radius: 10px;
   background-color: #ff9505;
   padding: 2px 10px 2px 10px;
 }
-
-.description-assemblybot {
+.products-container .description-assemblybot {
   border-bottom: 3px solid white;
   margin: 14px 14px 0 14px;
 }
-
-.description-assemblybot p {
+.products-container .description-assemblybot p {
   margin-bottom: 7px;
   text-align: center;
 }
-
-.bot-picture-construction {
+.products-container .bot-picture-construction {
   background-image: url(images/construction-bot.jpg);
   background-size: cover;
   background-position: center;
@@ -750,47 +717,37 @@ nav a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.leftsideconstructionbot {
+.products-container .leftsideconstructionbot {
   margin: 30px 0 0 40px;
 }
-
-.leftsideconstructionbot p {
+.products-container .leftsideconstructionbot p {
   border: 2px solid white;
   border-radius: 10px;
   background-color: #ff9505;
   padding: 2px 10px 2px 10px;
 }
-
-.description-constructionbot {
+.products-container .description-constructionbot {
   border-bottom: 3px solid white;
   margin: 14px 14px 0 14px;
 }
-
-.description-constructionbot p {
+.products-container .description-constructionbot p {
   margin-bottom: 7px;
   text-align: center;
 }
-
-.productscontact {
+.products-container .productscontact {
   text-align: center;
   margin: 20px;
 }
-
-.productscontact a {
+.products-container .productscontact a {
   color: #ff9505;
 }
-
-/* PRODUCTS END */
-/* CUSTOMIZATION START */
-.customizations {
+.products-container .customizations {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
 }
-
-.customizations button {
+.products-container .customizations button {
   border: 2px solid #ff9505;
   background-color: #ff9505;
   border-radius: 15px;
@@ -798,8 +755,7 @@ nav a:hover {
   color: white;
   font-family: "roboto mono";
 }
-
-.bot-picture-dexgrip {
+.products-container .bot-picture-dexgrip {
   background-image: url(images/dex-grip.png);
   background-size: cover;
   background-position: center;
@@ -808,41 +764,34 @@ nav a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.leftsidedexgrip {
+.products-container .leftsidedexgrip {
   margin: 30px 0 0 40px;
 }
-
-.leftsidedexgrip p {
+.products-container .leftsidedexgrip p {
   border: 2px solid white;
   border-radius: 10px;
   background-color: #ff9505;
   padding: 2px 10px 2px 10px;
 }
-
-.description-dexgrip {
+.products-container .description-dexgrip {
   border-bottom: 3px solid white;
   margin: 14px 14px 0 14px;
 }
-
-.description-dexgrip p {
+.products-container .description-dexgrip p {
   margin-bottom: 7px;
   text-align: center;
 }
-
-.customizationsbutton:hover {
+.products-container .customizationsbutton:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-
-.basemodel {
+.products-container .basemodel {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
 }
-
-.basemodel button {
+.products-container .basemodel button {
   border: 2px solid #ff9505;
   background-color: #ff9505;
   border-radius: 15px;
@@ -850,8 +799,7 @@ nav a:hover {
   color: white;
   font-family: "roboto mono";
 }
-
-.bot-picture-vision {
+.products-container .bot-picture-vision {
   background-image: url(images/vision.png);
   background-size: cover;
   background-position: center;
@@ -860,29 +808,24 @@ nav a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.leftsidevision {
+.products-container .leftsidevision {
   margin: 30px 0 0 40px;
 }
-
-.leftsidevision p {
+.products-container .leftsidevision p {
   border: 2px solid white;
   border-radius: 10px;
   background-color: #ff9505;
   padding: 2px 10px 2px 10px;
 }
-
-.description-vision {
+.products-container .description-vision {
   border-bottom: 3px solid white;
   margin: 14px 14px 0 14px;
 }
-
-.description-vision p {
+.products-container .description-vision p {
   margin-bottom: 7px;
   text-align: center;
 }
-
-.bot-picture-stepper {
+.products-container .bot-picture-stepper {
   background-image: url(images/stepper.jpg);
   background-size: cover;
   background-position: bottom;
@@ -891,29 +834,25 @@ nav a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.leftsidestepper {
+.products-container .leftsidestepper {
   margin: 30px 0 0 40px;
 }
-
-.leftsidestepper p {
+.products-container .leftsidestepper p {
   border: 2px solid white;
   border-radius: 10px;
   background-color: #ff9505;
   padding: 2px 10px 2px 10px;
 }
-
-.description-stepper {
+.products-container .description-stepper {
   border-bottom: 3px solid white;
   margin: 14px 14px 0 14px;
 }
-
-.description-stepper p {
+.products-container .description-stepper p {
   margin-bottom: 7px;
   text-align: center;
 }
 
-/* CUSTOMIZATION END */
+/* PRODUCTS & CUSTOMIZATION END */
 /* Ändringar Erik */
 .frontpage-part1-bg {
   background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
@@ -987,28 +926,28 @@ nav a:hover {
 /* ÄNDRINGAR ERIK */
 /* MEDIA START */
 @media (min-width: 600px) {
-  .bot-picture-cargo {
+  .products-container .bot-picture-cargo {
     background-position: top;
   }
-  .bot-picture-assembly {
+  .products-container .bot-picture-assembly {
     background-position: top;
   }
-  .bot-picture-construction {
+  .products-container .bot-picture-construction {
     background-position: top;
   }
-  .ourproducts {
+  .products-container .ourproducts {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
-  .bot-container {
+  .products-container .bot-container {
     width: 85vw;
   }
-  .aboutpicture {
+  .about-container .aboutpicture {
     height: 370px;
   }
-  .aboutpicture p {
+  .about-container .aboutpicture p {
     font-size: 26px;
     max-width: 340px;
   }
@@ -1031,21 +970,21 @@ nav a:hover {
     padding: 0 12px;
     font-size: 1rem;
   }
-  .aboutpicture {
+  .about-container .aboutpicture {
     height: 450px;
     margin: 0px;
   }
-  .aboutpicture p {
+  .about-container .aboutpicture p {
     font-size: 32px;
     max-width: 480px;
   }
-  .ourproducts {
+  .products-container .ourproducts {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
-  .bot-container {
+  .products-container .bot-container {
     width: 70vw;
   }
   .frontpage-part1-bg {
@@ -1090,42 +1029,42 @@ nav a:hover {
   }
 }
 @media (min-width: 992px) {
-  .aboutpicture p {
+  .about-container .aboutpicture p {
     max-width: 500px;
     font-size: 46px;
     margin-top: 60px;
     margin-left: 60px;
   }
-  .ourproducts {
+  .products-container .ourproducts {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .bot-container {
+  .products-container .bot-container {
     width: 30vw;
   }
 }
 @media (680px <= width <= 850px) {
-  .bilderpersonal img {
+  .about-container .bilderpersonal img {
     width: 200px;
     height: 200px;
   }
 }
 @media (850px <= width <= 1100px) {
-  .bilderpersonal img {
+  .about-container .bilderpersonal img {
     width: 250px;
     height: 250px;
   }
 }
 @media (min-width: 1100px) {
-  .bilderpersonal img {
+  .about-container .bilderpersonal img {
     width: 300px;
     height: 300px;
   }
 }
 @media (max-width: 500px) {
-  .bot-container p {
+  .products-container .bot-container p {
     font-size: 10px;
   }
   .formbox {

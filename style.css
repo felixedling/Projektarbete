@@ -150,7 +150,6 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .container-contact h1 {
@@ -172,13 +171,14 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 25px;
 }
 .container-contact .contact-pic {
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 310px;
+  width: 100%;
+  max-width: 720px; /* nice size on mobile/tablet */
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 .container-contact figcaption {
   font-size: 0.6rem;
@@ -192,11 +192,14 @@ nav a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 25px;
 }
 .container-contact .social-media {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 25px;
+  margin-bottom: 25px;
 }
 .container-contact .social-media a {
   color: #333;
@@ -220,7 +223,9 @@ nav a:hover {
 .container-contact .above-btn {
   display: flex;
   justify-content: center;
-  font-size: 16px;
+}
+.container-contact .above-btn p {
+  font-size: 14px;
 }
 .container-contact .formbox {
   background: #D9D9D9;
@@ -267,9 +272,9 @@ nav a:hover {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 20px;
-  margin-bottom: 2rem;
   text-decoration: none;
   width: 215px;
+  margin: 10px;
 }
 .container-contact .qnabtn a:hover {
   text-decoration: underline;
@@ -286,9 +291,8 @@ nav a:hover {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 20px;
-  margin-bottom: 1.3rem;
   text-decoration: none;
-  /* margin: 25px; */
+  margin: 10px;
 }
 .container-contact .contactbtn a {
   background-color: #fe5c02;

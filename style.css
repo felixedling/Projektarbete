@@ -580,6 +580,11 @@ nav a:hover {
   gap: 10px;
 }
 
+.bilderpersonal img {
+  width: 150px;
+  height: 150px;
+}
+
 .joinus {
   margin: 25px;
 }

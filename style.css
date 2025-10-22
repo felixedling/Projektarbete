@@ -1067,6 +1067,12 @@ nav a:hover {
   .products-container .bot-container p {
     font-size: 10px;
   }
+  .formbox {
+    margin: 25px;
+  }
+  .form-group {
+    max-width: 280px;
+  }
 }
 /* MEDIA END */
 /* HEADER startsida*/

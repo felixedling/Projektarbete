@@ -58,7 +58,6 @@ header {
   align-items: center;
   width: 60vw;
   height: 50px;
-  font-size: 1, 2rem;
   margin-right: 25px;
 }
 
@@ -577,6 +576,7 @@ nav a:hover {
   flex-wrap: wrap;
   margin: 25px;
   gap: 10px;
+  background-color: rgb(243, 239, 239);
 }
 
 .bilderpersonal img {

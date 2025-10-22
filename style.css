@@ -223,6 +223,7 @@ nav a:hover {
 .container-contact .above-btn {
   display: flex;
   justify-content: center;
+  margin: 0 25px;
 }
 .container-contact .above-btn p {
   font-size: 14px;

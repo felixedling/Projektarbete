@@ -1064,7 +1064,7 @@ nav a:hover {
   }
 }
 @media (max-width: 500px) {
-  .products-container .bot-container p {
+  .bot-container p {
     font-size: 10px;
   }
   .formbox {
@@ -1072,6 +1072,9 @@ nav a:hover {
   }
   .form-group {
     max-width: 280px;
+  }
+  .products-container .bot-container p {
+    font-size: 10px;
   }
 }
 /* MEDIA END */

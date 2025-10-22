@@ -164,13 +164,11 @@ nav a:hover {
   .bot-container {
     width: 85vw;
   }
-}
-@media (600px <= width <= 768px) {
   .aboutpicture {
     height: 370px;
   }
   .aboutpicture p {
-    font-size: 20px;
+    font-size: 26px;
     max-width: 340px;
   }
 }
@@ -197,7 +195,7 @@ nav a:hover {
     margin: 0px;
   }
   .aboutpicture p {
-    font-size: 28px;
+    font-size: 32px;
     max-width: 480px;
   }
   .ourproducts {
@@ -253,7 +251,7 @@ nav a:hover {
 @media (min-width: 992px) {
   .aboutpicture p {
     max-width: 500px;
-    font-size: 40px;
+    font-size: 46px;
     margin-top: 60px;
     margin-left: 60px;
   }
@@ -290,57 +288,34 @@ nav a:hover {
 .container-contact {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.container-contact h1 {
-  margin: 25px;
-  text-align: center;
-}
-.container-contact .background-contact {
-  background-image: url(./images/frontpage-bg.png);
-  background-size: cover;
-  background-position: right;
-}
-.container-contact .background-form {
-  background-image: url(./images/contact-form-pic.png);
-  background-size: cover;
-  background-position: right;
 }
 .container-contact .contact-img {
   font-family: roboto;
   display: flex;
   justify-content: center;
-  margin: 25px;
-}
-.container-contact .contact-img figure {
-  margin: 0;
-  text-align: center;
+  align-items: center;
 }
 .container-contact .contact-pic {
-  width: 100%;
-  max-width: 720px; /* nice size on mobile/tablet */
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 310px;
 }
 .container-contact figcaption {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.5rem;
   text-align: center;
+  opacity: 25%;
+  font-size: 12px;
 }
 .container-contact .contact-details {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 15px;
+  align-items: center;
 }
 .container-contact .social-media {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 15px;
 }
 .container-contact .social-media a {
   color: #333;
@@ -360,18 +335,11 @@ nav a:hover {
 }
 .container-contact .container-grey {
   background: #F3F3F3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .container-contact .above-btn {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  margin: 15px;
+  font-size: 16px;
 }
 .container-contact .contact-form {
   display: flex;
@@ -453,25 +421,20 @@ nav a:hover {
 /* Kontaktsida slut */
 /* Q&A sida start */
 .container-qna {
+  margin: 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url(./images/frontpage-bg.png);
-  background-size: cover;
-  background-position: right;
-}
-.container-qna h1 {
-  margin: 25px;
-  text-align: center;
 }
 .container-qna .question {
+  margin: 25px;
   display: flex;
   justify-content: flex-start;
-  margin: 10px;
+  margin: 25px;
   /* font-weight: bold; */
 }
 .container-qna .answer {
-  margin: 10px;
+  margin: 25px;
 }
 .container-qna .qnabtn a {
   text-decoration: none;
@@ -588,11 +551,15 @@ nav a:hover {
   max-width: 270px;
   margin-top: 40px;
   margin-left: 40px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .omosstext {
   margin: 25px;
+}
+
+.omosstext p {
+  margin-top: 20px;
 }
 
 .personal h2 {

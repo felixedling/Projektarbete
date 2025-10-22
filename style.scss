@@ -1107,9 +1107,6 @@ nav a:hover{
 }
 
 @media (max-width:500px) {
-    .bot-container p {
-        font-size: 10px;
-    }
     .products-container {
         .bot-container p {
             font-size: 10px;
@@ -1120,12 +1117,6 @@ nav a:hover{
     }
     .form-group {
         max-width: 280px;
-    }
-
-    .products-container {
-        .bot-container p {
-            font-size: 10px;
-        }
     }
 }
 /* MEDIA END */

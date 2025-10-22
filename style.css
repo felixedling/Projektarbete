@@ -7,12 +7,11 @@
 
 h1, h2, h3 {
   font-family: roboto;
-  font-size: 1, 2rem;
+  font-size: 1, 5rem;
 }
 
 p, a {
   font-family: "roboto mono";
-  font-size: 1rem;
 }
 
 /* HEADER START */
@@ -49,7 +48,6 @@ header {
   justify-content: flex-start;
   align-items: center;
   width: 30vw;
-  font-size: 34px;
   margin-left: 25px;
 }
 
@@ -60,7 +58,6 @@ header {
   align-items: center;
   width: 60vw;
   height: 50px;
-  font-size: 1, 2rem;
   margin-right: 25px;
 }
 
@@ -579,6 +576,7 @@ nav a:hover {
   flex-wrap: wrap;
   margin: 25px;
   gap: 10px;
+  background-color: rgb(243, 239, 239);
 }
 
 .bilderpersonal img {

@@ -157,10 +157,11 @@ nav a:hover {
 .container-contact h1 {
   margin: 25px;
   text-align: center;
+  color: white;
 }
 .container-contact .background-contact {
   background-image: url(./images/frontpage-bg.png);
-  background-size: cover;
+  background-size: fit-content;
   background-position: right;
 }
 .container-contact .background-form {
@@ -187,7 +188,7 @@ nav a:hover {
   color: #666;
   margin-top: 0.5rem;
   text-align: center;
-  opacity: 25%;
+  opacity: 75%;
   font-size: 12px;
 }
 .container-contact .contact-details {
@@ -207,10 +208,10 @@ nav a:hover {
   color: #333;
 }
 .container-contact .social-media a:hover {
-  color: #fe5c02;
+  color: rgb(243, 239, 239);
 }
 .container-contact .contact-details a:hover {
-  color: #fe5c02;
+  color: rgb(243, 239, 239);
 }
 .container-contact .contact-details a {
   color: #333;
@@ -220,7 +221,8 @@ nav a:hover {
   justify-content: center;
 }
 .container-contact .container-grey {
-  background: #F3F3F3;
+  background: rgb(243, 239, 239);
+  padding-top: 25px;
 }
 .container-contact .above-btn {
   display: flex;
@@ -315,7 +317,6 @@ nav a:hover {
 /* Kontaktsida slut */
 /* Q&A sida start */
 .container-qna {
-  margin: 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -324,7 +325,7 @@ nav a:hover {
   background-image: url(./images/frontpage-bg.png);
   background-size: cover;
   background-position: right;
-  width: 100vw;
+  width: 100%;
 }
 .container-qna h1 {
   margin: 25px;
@@ -1122,15 +1123,6 @@ nav a:hover {
 @media (max-width: 500px) {
   .bot-container p {
     font-size: 10px;
-  }
-  .container-contact {
-    width: 80vw;
-  }
-  .formbox {
-    width: 80vw;
-  }
-  .testbox {
-    width: 80vw;
   }
 }
 /* MEDIA END *//*# sourceMappingURL=style.css.map */

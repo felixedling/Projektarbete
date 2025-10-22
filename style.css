@@ -145,153 +145,6 @@ nav a:hover {
 }
 
 /* HEADER END */
-/* MEDIA START */
-@media (min-width: 600px) {
-  .bot-picture-cargo {
-    background-position: top;
-  }
-  .bot-picture-assembly {
-    background-position: top;
-  }
-  .bot-picture-construction {
-    background-position: top;
-  }
-  .ourproducts {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .bot-container {
-    width: 85vw;
-  }
-}
-@media (600px <= width <= 768px) {
-  .aboutpicture {
-    height: 370px;
-  }
-  .aboutpicture p {
-    font-size: 20px;
-    max-width: 340px;
-  }
-}
-@media (min-width: 768px) {
-  .hamburgermenu {
-    display: none;
-  }
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background: none;
-    position: relative;
-    padding-top: 0px;
-  }
-  nav a {
-    border: none;
-    padding: 0 12px;
-    font-size: 1rem;
-  }
-  .aboutpicture {
-    height: 450px;
-    margin: 0px;
-  }
-  .aboutpicture p {
-    font-size: 28px;
-    max-width: 480px;
-  }
-  .ourproducts {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .bot-container {
-    width: 70vw;
-  }
-  .frontpage-part1-bg {
-    background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-    width: 100vw;
-  }
-  .frontpage-part1-container {
-    background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-    width: 100vw;
-    height: 90vh; /*FRÅGA BRANDON: hur skriver man 100vh-50px?*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .frontpage-part1-text {
-    margin-left: 25px;
-    margin-right: 25px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .frontpage-bot {
-    width: 310px;
-    border-radius: 7.5%;
-    margin-right: 25px;
-    margin-left: 25px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .frontpage-part1 h1 {
-    width: 310px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 24px;
-  }
-  .container-qna {
-    width: calc(80vw + 50px);
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 768px) {
-  .rightside {
-    margin-right: 40px;
-  }
-}
-@media (min-width: 992px) {
-  .aboutpicture p {
-    max-width: 500px;
-    font-size: 40px;
-    margin-top: 60px;
-    margin-left: 60px;
-  }
-  .ourproducts {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .bot-container {
-    width: 30vw;
-  }
-}
-@media (680px <= width <= 850px) {
-  .bilderpersonal img {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media (850px <= width <= 1100px) {
-  .bilderpersonal img {
-    width: 250px;
-    height: 250px;
-  }
-}
-@media (min-width: 1100px) {
-  .bilderpersonal img {
-    width: 300px;
-    height: 300px;
-  }
-}
-/* MEDIA END */
 /* Kontaktsida start */
 .container-contact {
   display: flex;
@@ -318,36 +171,32 @@ nav a:hover {
   font-family: roboto;
   display: flex;
   justify-content: center;
-  margin: 25px;
-}
-.container-contact .contact-img figure {
-  margin: 0;
-  text-align: center;
+  align-items: center;
 }
 .container-contact .contact-pic {
-  width: 100%;
-  max-width: 720px; /* nice size on mobile/tablet */
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 310px;
 }
 .container-contact figcaption {
   font-size: 0.6rem;
   color: #666;
   margin-top: 0.5rem;
   text-align: center;
+  opacity: 25%;
+  font-size: 12px;
 }
 .container-contact .contact-details {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 15px;
+  align-items: center;
 }
 .container-contact .social-media {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 15px;
 }
 .container-contact .social-media a {
   color: #333;
@@ -367,18 +216,11 @@ nav a:hover {
 }
 .container-contact .container-grey {
   background: #F3F3F3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .container-contact .above-btn {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  margin: 15px;
+  font-size: 16px;
 }
 .container-contact .formbox {
   background: #D9D9D9;
@@ -466,6 +308,7 @@ nav a:hover {
 /* Kontaktsida slut */
 /* Q&A sida start */
 .container-qna {
+  margin: 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -481,13 +324,14 @@ nav a:hover {
   text-align: center;
 }
 .container-qna .question {
+  margin: 25px;
   display: flex;
   justify-content: flex-start;
-  margin: 10px;
+  margin: 25px;
   /* font-weight: bold; */
 }
 .container-qna .answer {
-  margin: 10px;
+  margin: 25px;
 }
 .container-qna .qnabtn a {
   text-decoration: none;
@@ -699,11 +543,15 @@ nav a:hover {
   max-width: 270px;
   margin-top: 40px;
   margin-left: 40px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .omosstext {
   margin: 25px;
+}
+
+.omosstext p {
+  margin-top: 20px;
 }
 
 .personal h2 {
@@ -1119,4 +967,144 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ÄNDRINGAR ERIK *//*# sourceMappingURL=style.css.map */
+/* ÄNDRINGAR ERIK */
+/* MEDIA START */
+@media (min-width: 600px) {
+  .bot-picture-cargo {
+    background-position: top;
+  }
+  .bot-picture-assembly {
+    background-position: top;
+  }
+  .bot-picture-construction {
+    background-position: top;
+  }
+  .ourproducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .bot-container {
+    width: 85vw;
+  }
+  .aboutpicture {
+    height: 370px;
+  }
+  .aboutpicture p {
+    font-size: 26px;
+    max-width: 340px;
+  }
+}
+@media (min-width: 768px) {
+  .hamburgermenu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background: none;
+    position: relative;
+    padding-top: 0px;
+  }
+  nav a {
+    border: none;
+    padding: 0 12px;
+    font-size: 1rem;
+  }
+  .aboutpicture {
+    height: 450px;
+    margin: 0px;
+  }
+  .aboutpicture p {
+    font-size: 32px;
+    max-width: 480px;
+  }
+  .ourproducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .bot-container {
+    width: 70vw;
+  }
+  .frontpage-part1-bg {
+    background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
+    width: 100vw;
+  }
+  .frontpage-part1-container {
+    background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
+    width: 100vw;
+    height: 90vh; /*FRÅGA BRANDON: hur skriver man 100vh-50px?*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .frontpage-part1-text {
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .frontpage-bot {
+    width: 310px;
+    border-radius: 7.5%;
+    margin-right: 25px;
+    margin-left: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .frontpage-part1 h1 {
+    width: 310px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .rightside {
+    margin-right: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .aboutpicture p {
+    max-width: 500px;
+    font-size: 46px;
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+  .ourproducts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .bot-container {
+    width: 30vw;
+  }
+}
+@media (680px <= width <= 850px) {
+  .bilderpersonal img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (850px <= width <= 1100px) {
+  .bilderpersonal img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 1100px) {
+  .bilderpersonal img {
+    width: 300px;
+    height: 300px;
+  }
+}
+/* MEDIA END *//*# sourceMappingURL=style.css.map */

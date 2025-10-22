@@ -80,10 +80,12 @@ header {
 .hamburgermenu .bar1,
 .hamburgermenu .bar2,
 .hamburgermenu .bar3 {
-  height: 3px;
-  width: 100%;
-  background-color: #333;
-  margin: 6px 0px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background-color: black;
+  border-radius: 2px;
   transition: 0.3s;
 }
 
@@ -493,6 +495,11 @@ nav a:hover {
   min-width: 40px;
   min-height: 40px;
   max-height: 40px;
+}
+
+.logo-footer {
+  width: 25px;
+  height: 25px;
 }
 
 .middle-footer {

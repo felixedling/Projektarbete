@@ -1112,4 +1112,9 @@ nav a:hover {
     height: 300px;
   }
 }
+@media (max-width: 500px) {
+  .bot-container p {
+    font-size: 10px;
+  }
+}
 /* MEDIA END *//*# sourceMappingURL=style.css.map */

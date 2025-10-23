@@ -210,6 +210,11 @@ nav a:hover{
         .container-grey {
         background: $thirdColor;
         padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
     }
         .above-btn {
         display: flex;
@@ -217,7 +222,7 @@ nav a:hover{
         margin: 0 25px;
     }
         .above-btn p{
-            font-size: 14px;
+        font-size: 14px;
     }
         .formbox {
         background: #D9D9D9;
@@ -258,55 +263,19 @@ nav a:hover{
         gap: 1rem;
         justify-content: center;
     }
-        .qnabtn {
-        background-color: #fe5c02;
-        color: black;
-        border: none;
-        padding: 0.7rem 1.5rem;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 20px;
-        // margin-bottom: 2rem;
-        text-decoration: none;
-        width: 215px;
-        margin: 10px;
-    }
-
-    .qnabtn a:hover {
-        text-decoration: underline;
-    }
-
-    .qnabtn a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .contactbtn {
-        background-color: #fe5c02;
+        .contactbtn {
+        width: 180px;
+        background-color:#ff9505;
         color: white;
         border: none;
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
         cursor: pointer;
         border-radius: 20px;
-        // margin-bottom: 1.3rem;
-        text-decoration: none;
-        margin: 10px;
-    }
-
-    .contactbtn a{
-        background-color: #fe5c02;
-        color: white;
-        border: none;
-        padding: 0.7rem 1.5rem;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 4px;
         margin-bottom: 1.3rem;
-        text-decoration: none;
+        margin: 25px;
     }
-
-    .contactbtn a:hover {
+    .contactbtn:hover {
         text-decoration: underline;
     }
 }
@@ -335,18 +304,14 @@ nav a:hover{
     .answer {
         margin: 25px;
     }
-    .qnabtn a{
-        text-decoration: none;
-        color: black;
-    }
-    .homebtn {
-        margin: 25px;
+    form {
         display: flex;
         justify-content: center;
     }
-        .contactbtn {
-        background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
-        color: black;
+    .contactbtn {
+        width: 180px;
+        background-color:#ff9505;
+        color: white;
         border: none;
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
@@ -354,24 +319,12 @@ nav a:hover{
         border-radius: 20px;
         margin-bottom: 1.3rem;
         text-decoration: none;
-        /* margin: 25px; */
+        
     }
-
-    .contactbtn a{
-        background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
-        color: white;
-        border: none;
-        padding: 0.7rem 1.5rem;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 4px;
-        margin-bottom: 1.3rem;
-        text-decoration: none;
-    }
-
-    .contactbtn a:hover {
+    .contactbtn:hover {
         text-decoration: underline;
     }
+
 }
 /* Q&A sida slut */
 
@@ -423,6 +376,9 @@ nav a:hover{
         border-radius: 8px;
         width: 115px;
         height: 12vh;
+    }
+    .card img {
+        height: 20px;
     }
     p {
         font-size: 10px;

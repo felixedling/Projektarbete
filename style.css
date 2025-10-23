@@ -232,6 +232,11 @@ nav a:hover {
 .container-contact .container-grey {
   background: rgb(243, 239, 239);
   padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
 }
 .container-contact .above-btn {
   display: flex;
@@ -279,48 +284,19 @@ nav a:hover {
   gap: 1rem;
   justify-content: center;
 }
-.container-contact .qnabtn {
-  background-color: #fe5c02;
-  color: black;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 20px;
-  text-decoration: none;
-  width: 215px;
-  margin: 10px;
-}
-.container-contact .qnabtn a:hover {
-  text-decoration: underline;
-}
-.container-contact .qnabtn a {
-  text-decoration: none;
-  color: white;
-}
 .container-contact .contactbtn {
-  background-color: #fe5c02;
+  width: 180px;
+  background-color: #ff9505;
   color: white;
   border: none;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 20px;
-  text-decoration: none;
-  margin: 10px;
-}
-.container-contact .contactbtn a {
-  background-color: #fe5c02;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
   margin-bottom: 1.3rem;
-  text-decoration: none;
+  margin: 25px;
 }
-.container-contact .contactbtn a:hover {
+.container-contact .contactbtn:hover {
   text-decoration: underline;
 }
 
@@ -352,18 +328,14 @@ nav a:hover {
 .container-qna .answer {
   margin: 25px;
 }
-.container-qna .qnabtn a {
-  text-decoration: none;
-  color: black;
-}
-.container-qna .homebtn {
-  margin: 25px;
+.container-qna form {
   display: flex;
   justify-content: center;
 }
 .container-qna .contactbtn {
-  background-color: rgb(234, 88, 12, var(--tw-bg-opacity, 1));
-  color: black;
+  width: 180px;
+  background-color: #ff9505;
+  color: white;
   border: none;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
@@ -371,20 +343,8 @@ nav a:hover {
   border-radius: 20px;
   margin-bottom: 1.3rem;
   text-decoration: none;
-  /* margin: 25px; */
 }
-.container-qna .contactbtn a {
-  background-color: rgb(234, 88, 12, var(--tw-bg-opacity, 1));
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 1.3rem;
-  text-decoration: none;
-}
-.container-qna .contactbtn a:hover {
+.container-qna .contactbtn:hover {
   text-decoration: underline;
 }
 
@@ -442,6 +402,9 @@ nav a:hover {
   border-radius: 8px;
   width: 115px;
   height: 12vh;
+}
+.kpi-card .card img {
+  height: 20px;
 }
 .kpi-card p {
   font-size: 10px;

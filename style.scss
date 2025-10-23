@@ -829,7 +829,7 @@ nav a:hover{
 /* Ändringar Erik */
 .frontpage-part1-bg {
     background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-    width: 100vw;
+    width: 100%;
     @include flex(column,center,center);
 }
 
@@ -853,7 +853,6 @@ nav a:hover{
     width: 310px;
     margin-top: 25px;
     margin-bottom: 25px;
-    font-size: 24px;
 }
 
 .p-size {
@@ -954,11 +953,11 @@ nav a:hover{
     }
     .frontpage-part1-bg {
     background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-    width: 100vw;
+    width: 100%;
     }
     .frontpage-part1-container {
     background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     @include flex(row,center,center);
     }
@@ -1063,7 +1062,7 @@ nav a:hover{
     position: sticky;
     top: 0;
     @include flex(row,center,center);
-    width: 100vw;
+    width: 100%;
     background-color: rgba(243, 239, 239, 0.85); /* Opacity ändrad */
     backdrop-filter: blur(3px);
     padding-top: 0;
@@ -1150,9 +1149,8 @@ nav a:hover{
         border-top: 1px solid #ccc;
     }
 
-    .nav2 a:hover{
-        border-radius: 10px;
-        background: $fourthColor;
+    .nav2 a:hover {
+        background: none;
         color: $primaryColor;
         text-decoration: underline;
     }
@@ -1194,7 +1192,7 @@ nav a:hover{
 
         .container-header2 { 
         width: calc(80vw + 50px); /*Ändra här för header margins/alignment */
-        max-width: 950px;
+        max-width: 1050px;
         }    
     }
 }
@@ -1207,7 +1205,7 @@ nav a:hover{
 .frontpage-main-container {
     .frontpage-part1-bg {
         background-image: url(./images/frontpage-bg.png);
-        width: 100vw;
+        width: 100%;
         background-size: cover;
         background-position: right;
         @include flex(column,center,center);
@@ -1270,7 +1268,7 @@ nav a:hover{
 
         .frontpage-part1-text {
             width: 40vw;
-            max-width: 450px;
+            max-width: 500px;
             @include flex(column,center,flex-start);
         }
 
@@ -1286,20 +1284,24 @@ nav a:hover{
 
         .frontpage-bot {
             width: 40vw;
-            max-width: 450px;
+            max-width: 500px;
             @include flex(column,center,center);
         } 
     }  
 
     /* Part-2 */
 
-    .why-workbot, .frontpage-part2-container1a p, .application-areas, .infobox-bot {
+    .why-workbot, .frontpage-part2-container1a p, .application-areas {
         margin-bottom: 25px;
+    }
+
+    .infobox-bot {
+        margin-bottom: 50px;
     }
 
     .frontpage-part2-bg {
         background-color: #F3F3F3;
-        width: 100vw; /* Ta detta och gör samma i part1-bg för att få bort scrollen i viewporten. Något med denna property sabbar även header-alignmenten i mellanstor viewport*/
+        width: 100%;
     }
 
     .frontpage-part2-container {
@@ -1314,7 +1316,22 @@ nav a:hover{
     }
 
     .frontpage-part2-infobox {
-        filter: drop-shadow(0px 0px 10px #7f7f7f); /* Funkar inte med sticky header */
+        filter: drop-shadow(0px 0px 10px #7f7f7f);
+    }
+
+    .arrow-left, .arrow-right {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 25px;
+    }
+
+    .arrow-left {
+        background-image: url(./images/arrow-left.png);
+    }
+
+    .arrow-right {
+        background-image: url(./images/arrow-right.png);
     }
 
     .frontpage-part2-container1b {
@@ -1328,7 +1345,7 @@ nav a:hover{
         height: 50px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        @include flex(row,center,center);
+        @include flex(row,space-evenly,center);
     }
 
     .infobox-bot {
@@ -1357,7 +1374,7 @@ nav a:hover{
 
         .frontpage-part2-container1a, .frontpage-part2-container1b, .infobox-top, .infobox-bot {
             width: 40vw;
-            max-width: 450px;
+            max-width: 500px;
         }
 
         .infobox-bot, .frontpage-part2-container1a p {
@@ -1373,7 +1390,7 @@ nav a:hover{
 
     .frontpage-part3-bg {
         background-color: $fourthColor;
-        width: 100vw;
+        width: 100%;
         @include flex(column,flex-start,center);
     }
 
@@ -1388,13 +1405,9 @@ nav a:hover{
         text-align: center;
     }
 
-    .the-workforce {
-        margin-bottom: 25px;
-    }
-
     .frontpage-specsbox {
         width: 310px;
-        height: 450px;
+        height: 500px;
         filter: drop-shadow(0px 0px 10px #7f7f7f);
         margin-bottom: 50px;
     }
@@ -1406,6 +1419,10 @@ nav a:hover{
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     .specsbox-top {
@@ -1430,8 +1447,16 @@ nav a:hover{
         background-color: $primaryColor;
         border-radius: 15px;
         margin-left: 15px; 
-        margin-top: 0px; /*????????????*/
+        margin-top: 0px;
         @include flex(row,center,center);
+    }
+
+    .arrows {
+        background-image: url(./images/arrows.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 25px;
     }
 
     .assemblybot {
@@ -1502,6 +1527,8 @@ nav a:hover{
 
     .testdiv-container {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .testdiv1, .testdiv2 {
@@ -1511,22 +1538,22 @@ nav a:hover{
 
     .testdiv-container {
         width: calc(80vw + 50px);
-        max-width: 950px;
+        max-width: 1050px;
         @include flex(column,flex-start,center);
     }
 
     .testdiv-divider {
         width: 50px;
-        height: 450px ;
+        height: 500px ;
         display: none;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
 
         .testdiv-container {
         width: calc(80vw + 50px);
-        max-width: 950px;
-        @include flex(row,space-evenly,stretch);
+        max-width: 1050px;
+        @include flex(row,space-between,stretch);
         }
 
         .testdiv1, .testdiv2 {
@@ -1540,7 +1567,7 @@ nav a:hover{
 
         .frontpage-part3-container {
             width: calc(80vw + 50px);
-            max-width: 950px;
+            max-width: 1050px;
             @include flex(row,space-evenly,center);
             margin-top: 75px;
         }
@@ -1560,7 +1587,7 @@ nav a:hover{
 
     .frontpage-part4-bg {
         background-color:#F3F3F3;
-        width: 100vw;
+        width: 100%;
         padding: 75px 0px 50px 0px;
         @include flex(row,center,center);
     }
@@ -1578,9 +1605,15 @@ nav a:hover{
         margin-bottom: 12.5px;
     }
 
-    .Projects-heading {
+    .orange-heading {
         display: inline-block;
         color: $primaryColor;
+    }
+
+    .orange-heading2 {
+        display: inline-block;
+        color: $primaryColor;
+        margin-bottom: 25px;
     }
 
     .frontpage-project1, .frontpage-project2, .frontpage-project3 {
@@ -1624,7 +1657,7 @@ nav a:hover{
 
         .part4-fullscreen-container1, .part4-fullscreen-container2 {
             width: 40vw;
-            max-width: 450px;
+            max-width: 500px;
             display: flex;
             flex-direction: column;
         }
@@ -1657,7 +1690,7 @@ nav a:hover{
 
         .frontpage-project1, .frontpage-project2, .frontpage-project3, .part4-button-container {
             width: 40vw;
-            max-width: 450px;
+            max-width: 500px;
         }
 
         .project-quote, .part4-button-container {
@@ -1672,13 +1705,103 @@ nav a:hover{
     }
 }
 
-/* ATT GÖRA */
-/*  
-    Fixa footern
-    Kolla WCAG
-    Lägg till pilar till vissa boxar
-    Kanske lägga en ruta/bakgrund runt produktdelen
-    Fixa "viewallspecs-knappens" font
-/*
+/* FOOTER2 START */
+
+.footer2-container {
+    .footer2-bg {
+        width: 100%;
+        background-color: $secondaryColor;
+        border-top: 1px solid $fifthColor;
+        color: $fourthColor;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        @include flex(center,center);
+    }
+
+    .container-footer2 {
+        @include flex(row,flex-start,center);
+        width: 310px;
+    }
+
+    .footer-text {
+        flex-direction: column;
+    }
+
+    .leftside-footer2 {
+        width: 10vw;
+        margin-right: 25px;
+        @include flex(row,center,center);
+        border-radius: 100%;
+        background-color: $primaryColor;
+        max-width: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+
+    .logo-footer2 {
+        width: 25px;
+        height: 25px;
+    }
+
+    .middle-footer2 {
+        @include flex(column,center,flex-start);
+        flex-wrap: wrap;
+        margin: 5px;
+        width: 100%;
+        gap: 2px;
+    }
+
+    .middle-footer2 a {
+        text-decoration: underline;
+        color: $fourthColor;
+        font-size: 15px;
+    }
+
+    .middle-footer2 a:hover {
+        text-decoration: none;
+    }
+
+    .rightside-footer2 {
+        display: flex;
+        align-self: flex-end;
+        flex-wrap: nowrap;
+        min-width: 270px;
+        margin: 10px 0px;
+        font-size: 12px;
+        display: none;
+    }
+
+    .rightside-footer2 p {
+        font-size: 12px;
+    }
+
+    @media (min-width: 768px) {
+
+        .footer2-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: calc(80vw);
+        }
+
+        .container-footer2 {
+            width: calc(80vw + 50px);
+            max-width: 1050px;
+        }
+
+        .middle-footer2 {
+        @include flex(row,flex-start,center);
+        flex-wrap: wrap;
+        gap: 25px;
+        }
+
+        .rightside-footer2 {
+            display: flex;
+        }
+    }
+}
+
+/* FOOTER2 END */   
 
 /* FRONTPAGE END */

@@ -196,6 +196,7 @@ nav a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 25px;
         margin-left: 25px;
         margin-bottom: 25px;
     }
@@ -1115,6 +1116,12 @@ nav a:hover{
     }
     .form-group {
         max-width: 280px;
+    }
+    .contact-details {
+        font-size: 12px;
+    }
+    .social-media {
+        font-size: 12px;
     }
 }
 /* MEDIA END */

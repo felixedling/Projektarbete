@@ -398,6 +398,9 @@ nav a:hover {
   width: 115px;
   height: 12vh;
 }
+.kpi-card .card img {
+  height: 20px;
+}
 .kpi-card p {
   font-size: 10px;
 }

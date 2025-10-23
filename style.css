@@ -232,11 +232,6 @@ nav a:hover {
 .container-contact .container-grey {
   background: rgb(243, 239, 239);
   padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
 }
 .container-contact .above-btn {
   display: flex;
@@ -284,8 +279,6 @@ nav a:hover {
   gap: 1rem;
   justify-content: center;
 }
-.container-contact .contactbtn {
-  width: 180px;
 .container-contact .qnabtn {
   background-color: #ff9505;
   color: #333;
@@ -325,9 +318,9 @@ nav a:hover {
   cursor: pointer;
   border-radius: 4px;
   margin-bottom: 1.3rem;
-  margin: 25px;
+  text-decoration: none;
 }
-.container-contact .contactbtn:hover {
+.container-contact .contactbtn a:hover {
   text-decoration: underline;
 }
 
@@ -359,7 +352,6 @@ nav a:hover {
 .container-qna .answer {
   margin: 25px;
 }
-.container-qna form {
 .container-qna .qnabtn a {
   text-decoration: none;
   color: #333;
@@ -370,8 +362,6 @@ nav a:hover {
   justify-content: center;
 }
 .container-qna .contactbtn {
-  width: 180px;
-  background-color: #ff9505;
   background-color: rgb(234, 88, 12, var(--tw-bg-opacity, 1));
   color: #333;
   border: none;
@@ -390,11 +380,11 @@ nav a:hover {
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 4px;
   margin-bottom: 1.3rem;
   text-decoration: none;
 }
-.container-qna .contactbtn:hover {
+.container-qna .contactbtn a:hover {
   text-decoration: underline;
 }
 
@@ -452,9 +442,6 @@ nav a:hover {
   border-radius: 8px;
   width: 115px;
   height: 12vh;
-}
-.kpi-card .card img {
-  height: 20px;
 }
 .kpi-card p {
   font-size: 10px;

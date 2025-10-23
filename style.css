@@ -191,10 +191,9 @@ nav a:hover {
 }
 .container-contact figcaption {
   font-size: 0.6rem;
-  color: #666;
+  color: #333;
   margin-top: 0.5rem;
   text-align: center;
-  opacity: 75%;
   font-size: 12px;
 }
 .container-contact .contact-details {
@@ -351,6 +350,7 @@ nav a:hover {
   color: #ff9505;
   display: flex;
   text-decoration: none;
+  margin: 25px;
 }
 .toptext .projects {
   color: #ff9505;
@@ -359,14 +359,17 @@ nav a:hover {
   text-align: center;
   margin-top: 10px;
 }
-.toptext .belowtitle {
+.toptext .above-img {
   display: flex;
   flex-direction: column;
-  margin: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
   font-weight: normal;
 }
 
 .imgbox {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
 }
@@ -408,6 +411,7 @@ nav a:hover {
 .testbox {
   display: flex;
   justify-content: center;
+  max-width: 1200px;
 }
 
 .grey-container {
@@ -1024,6 +1028,37 @@ nav a:hover {
   }
   .products-container .bot-container {
     width: 30vw;
+  }
+}
+@media (min-width: 1205px) {
+  .fullscreen-project {
+    display: flex;
+    flex-direction: row;
+  }
+  .fullscreen-project .projectimg {
+    width: 100px;
+  }
+  .fullscreen-project .above-img {
+    margin: 25px;
+    text-align: center;
+  }
+  .fullscreen-project .testbox {
+    width: 400px;
+    height: 850px;
+    justify-content: center;
+  }
+  .fullscreen-project .card {
+    width: 100px;
+  }
+  .fullscreen-contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .fullscreen-contact .fullscreen-div a:hover {
+    color: red;
   }
 }
 @media (680px <= width <= 850px) {

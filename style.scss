@@ -175,10 +175,9 @@ nav a:hover{
     }
         figcaption {
         font-size: 0.6rem;
-        color: #666;
+        color: #333;
         margin-top: .5rem;
         text-align: center;
-        opacity: 75%;
         font-size: 12px;
     }
         .contact-details {
@@ -328,25 +327,31 @@ nav a:hover{
 
 .toptext {
     text-align: center;
+    // margin: 25px;
     a {
         color: $primaryColor;
         display: flex;
         text-decoration: none;
+        margin: 25px;
     }
     .projects {
-        color: $primaryColor;
+        color: #ff9505;
     }
     .titleprojects {
         text-align: center;
         margin-top: 10px;
     }
-    .belowtitle {
-        display: flex;flex-direction: column;
-        margin: 25px;
+    .above-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
         font-weight: normal;
     }
 }
 .imgbox {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
         .imgclass {
@@ -383,6 +388,7 @@ nav a:hover{
 .testbox {
     display: flex;
     justify-content: center;
+    max-width: 1200px;
 }
 
 .grey-container {
@@ -959,6 +965,38 @@ nav a:hover{
         }
         .bot-container {
             width: 30vw;
+        }
+    }
+}
+
+@media (min-width:1205px) {
+        .fullscreen-project {
+        display: flex;
+        flex-direction: row;
+        .projectimg {
+            width: 100px;
+        }
+        .above-img {
+            margin: 25px;
+            text-align: center;
+        }
+        .testbox {
+            width: 400px;
+            height: 850px;
+            justify-content: center;
+        }
+        .card {
+            width: 100px;
+        }
+    }
+    .fullscreen-contact {
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        .fullscreen-div a:hover {
+            color: red;
         }
     }
 }

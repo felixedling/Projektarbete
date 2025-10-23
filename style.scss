@@ -30,7 +30,7 @@ header {
     background-color: $thirdColor;
     padding-top: 0;
     height: 50px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $fifthColor;
     z-index: 2;
 }
 
@@ -73,7 +73,7 @@ header {
     width: 30px;          
     height: 2px;           
     margin: 6px 0;         
-    background-color: black; 
+    background-color: $fifthColor; 
     border-radius: 2px;    
     transition: 0.3s;
 }
@@ -143,7 +143,7 @@ nav a:hover{
         h1 {
         margin: 25px;
         text-align: center;
-        color: white;
+        color: $fourthColor;
         }
         .background-contact {
         background-image: url(./images/frontpage-bg.png);
@@ -254,8 +254,8 @@ nav a:hover{
         justify-content: center;
     }
         .qnabtn {
-        background-color: #fe5c02;
-        color: black;
+        background-color: $primaryColor;
+        color: $fifthColor;
         border: none;
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
@@ -273,12 +273,12 @@ nav a:hover{
 
     .qnabtn a {
         text-decoration: none;
-        color: white;
+        color: $fourthColor;
     }
 
     .contactbtn {
-        background-color: #fe5c02;
-        color: white;
+        background-color: $primaryColor;
+        color: $fourthColor;
         border: none;
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
@@ -290,8 +290,8 @@ nav a:hover{
     }
 
     .contactbtn a{
-        background-color: #fe5c02;
-        color: white;
+        background-color: $primaryColor;
+        color: $fourthColor;
         border: none;
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
@@ -332,7 +332,7 @@ nav a:hover{
     }
     .qnabtn a{
         text-decoration: none;
-        color: black;
+        color: $fifthColor;
     }
     .homebtn {
         margin: 25px;
@@ -341,7 +341,7 @@ nav a:hover{
     }
         .contactbtn {
         background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
-        color: black;
+        color: $fifthColor;
         border: none;
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
@@ -354,7 +354,7 @@ nav a:hover{
 
     .contactbtn a{
         background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
-        color: white;
+        color: $fourthColor;
         border: none;
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
@@ -376,12 +376,12 @@ nav a:hover{
 .toptext {
     text-align: center;
     a {
-        color: #ff9505;
+        color: $primaryColor;
         display: flex;
         text-decoration: none;
     }
     .projects {
-        color: #fe5c02;
+        color: $primaryColor;
     }
     .titleprojects {
         text-align: center;
@@ -468,7 +468,7 @@ nav a:hover{
 .container-footer {
     @include flex(row,flex-start,center);
     background-color: $secondaryColor;
-    border-top: 1px solid black;
+    border-top: 1px solid $fifthColor;
     color: $fourthColor;
 }
 
@@ -610,7 +610,7 @@ nav a:hover{
         margin: 30px 0 0 40px;
     }
     .leftsidecargobot p {
-        border: 2px solid white;
+        border: 2px solid $fourthColor;
         border-radius: 10px;
         background-color: $primaryColor;
         padding: 2px 10px 2px 10px;
@@ -631,7 +631,7 @@ nav a:hover{
         cursor: pointer;
     }
     .description-cargobot {
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $fourthColor;
         margin: 14px 14px 0 14px;
     }
     .description-cargobot p {
@@ -639,7 +639,7 @@ nav a:hover{
         text-align: center;
     }
     .products-description.description1 {
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $fourthColor;
         margin: 7px 10px 0 10px;
         @include flex(row,space-between,stretch);
     }
@@ -647,7 +647,7 @@ nav a:hover{
         margin-bottom: 5px;
     }
     .products-description {
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $fourthColor;
         margin: 5px 10px 0 10px;
         @include flex(row,space-between,stretch);
     }
@@ -671,13 +671,13 @@ nav a:hover{
         margin: 30px 0 0 40px;
     }
     .leftsideassemblybot p {
-        border: 2px solid white;
+        border: 2px solid $fourthColor;
         border-radius: 10px;
         background-color: $primaryColor;
         padding: 2px 10px 2px 10px;
     }
     .description-assemblybot {
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $fourthColor;
         margin: 14px 14px 0 14px;
     }
     .description-assemblybot p {
@@ -697,13 +697,13 @@ nav a:hover{
         margin: 30px 0 0 40px;
     }
     .leftsideconstructionbot p {
-        border: 2px solid white;
+        border: 2px solid $fourthColor;
         border-radius: 10px;
         background-color: $primaryColor;
         padding: 2px 10px 2px 10px;
     }
     .description-constructionbot {
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $fourthColor;
         margin: 14px 14px 0 14px;
     }
     .description-constructionbot p {
@@ -742,13 +742,13 @@ nav a:hover{
         margin: 30px 0 0 40px;
     }
     .leftsidedexgrip p {
-        border: 2px solid white;
+        border: 2px solid $fourthColor;
         border-radius: 10px;
         background-color: $primaryColor;
         padding: 2px 10px 2px 10px;
     }
     .description-dexgrip {
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $fourthColor;
         margin: 14px 14px 0 14px;
     }
     .description-dexgrip p {
@@ -784,13 +784,13 @@ nav a:hover{
         margin: 30px 0 0 40px;
     }
     .leftsidevision p {
-        border: 2px solid white;
+        border: 2px solid $fourthColor;
         border-radius: 10px;
         background-color: $primaryColor;
         padding: 2px 10px 2px 10px;
     }
     .description-vision {
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $fourthColor;
         margin: 14px 14px 0 14px;
     }
     .description-vision p {
@@ -810,13 +810,13 @@ nav a:hover{
         margin: 30px 0 0 40px;
     }
     .leftsidestepper p {
-        border: 2px solid white;
+        border: 2px solid $fourthColor;
         border-radius: 10px;
         background-color: $primaryColor;
         padding: 2px 10px 2px 10px;
     }
     .description-stepper {
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid $fourthColor;
         margin: 14px 14px 0 14px;
     }
     .description-stepper p {
@@ -874,13 +874,13 @@ nav a:hover{
     height: 50px;
     margin-bottom: 25px;
     border-radius: 25px;
-    background-color: #ff9505;
-    border: 3px solid white;
+    background-color: $primaryColor;
+    border: 3px solid $fourthColor;
     @include flex(column,center,center);
 }
 
 .demo-button-text {
-    color: white;
+    color: $fourthColor;
     font-size: 14px;
 }
 
@@ -959,7 +959,7 @@ nav a:hover{
     .frontpage-part1-container {
     background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
     width: 100vw;
-    height: 90vh; /*FRÅGA BRANDON: hur skriver man 100vh-50px?*/
+    height: 90vh;
     @include flex(row,center,center);
     }
     .frontpage-part1-text {
@@ -1069,7 +1069,7 @@ nav a:hover{
     padding-top: 0;
     margin-bottom: 0;
     height: 50px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $fifthColor;
     z-index: 2;
 
     .container-header2 {
@@ -1152,8 +1152,8 @@ nav a:hover{
 
     .nav2 a:hover{
         border-radius: 10px;
-        background: white;
-        color: #fe5c02;
+        background: $fourthColor;
+        color: $primaryColor;
         text-decoration: underline;
     }
 
@@ -1246,13 +1246,13 @@ nav a:hover{
         height: 50px;
         margin-bottom: 25px;
         border-radius: 25px;
-        background-color: #fe5c02;
-        border: 3px solid white;
+        background-color: $primaryColor;
+        border: 3px solid $fourthColor;
         @include flex(column,center,center);
     }
 
     .demo-button-text {
-        color: white;
+        color: $fourthColor;
         font-size: 14px;
     }
 
@@ -1261,11 +1261,6 @@ nav a:hover{
     }
 
     @media (min-width: 768px) {
-    /* 
-        .frontpage-part1-bg {
-            background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-            width: 100vw;
-        } */
 
         .frontpage-part1-container {
             height: calc(100vh - 50px);
@@ -1276,8 +1271,10 @@ nav a:hover{
         .frontpage-part1-text {
             width: 40vw;
             max-width: 450px;
-            @include flex(column,center,center);
+            @include flex(column,center,flex-start);
         }
+
+        div
 
         .frontpage-part1-text h1 {
             margin-top: 0px;
@@ -1327,7 +1324,7 @@ nav a:hover{
     }
 
     .infobox-top {
-        background-color: #fe5c02;
+        background-color: $primaryColor;
         height: 50px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -1348,7 +1345,7 @@ nav a:hover{
     }
 
     .frontpage-part2-infobox p {
-        color: white;
+        color: $fourthColor;
     }
 
     @media (min-width: 768px) {
@@ -1375,7 +1372,7 @@ nav a:hover{
     /* Part-3 */
 
     .frontpage-part3-bg {
-        background-color: white;
+        background-color: $fourthColor;
         width: 100vw;
         @include flex(column,flex-start,center);
     }
@@ -1424,13 +1421,23 @@ nav a:hover{
     }
 
     .specsbox-top p, .specsbox-top2 p, .specsbox-top3 p {
-        color: white;
+        color: $fourthColor;
     }
 
     .liftbot {
         width: 90px;
         height: 30px;
-        background-color: #fe5c02;
+        background-color: $primaryColor;
+        border-radius: 15px;
+        margin-left: 15px; 
+        margin-top: 0px; /*????????????*/
+        @include flex(row,center,center);
+    }
+
+    .assemblybot {
+        width: 120px;
+        height: 30px;
+        background-color: $primaryColor;
         border-radius: 15px;
         margin-left: 15px; 
         margin-top: 0px; /*????????????*/
@@ -1454,7 +1461,7 @@ nav a:hover{
     .specsbox-divider {
         width: 280px;
         height: 3px;
-        background-color: white;
+        background-color: $fourthColor;
         border-radius: 1.5px;
         margin: 5px 15px 5px 15px;  
     }
@@ -1468,14 +1475,18 @@ nav a:hover{
         width: 120px;
         height: 30px;
         border-radius: 15px;
-        border: 2px solid white;
-        background-color: #fe5c02;
+        border: 2px solid $fourthColor;
+        background-color: $primaryColor;
         @include flex(row,center,center);
         font-family: roboto; /* Fungerar inte? */
     }
 
-    .specsbox-specs p {
+    .specsbox-specs {
         font-size: 12px;
+    }
+
+    .specsbox-specs p:first-of-type {
+        font-weight: bold;
     }
 
     .specsbox-spec1, .specsbox-spec2, .specsbox-spec3, .specsbox-spec4 {
@@ -1569,7 +1580,7 @@ nav a:hover{
 
     .Projects-heading {
         display: inline-block;
-        color: #fe5c02;
+        color: $primaryColor;
     }
 
     .frontpage-project1, .frontpage-project2, .frontpage-project3 {
@@ -1591,8 +1602,8 @@ nav a:hover{
         height: 50px;
         margin-bottom: 25px;
         border-radius: 25px;
-        background-color: #fe5c02;
-        border: 3px solid white;
+        background-color: $primaryColor;
+        border: 3px solid $fourthColor;
         @include flex(column,center,center);
     }
 

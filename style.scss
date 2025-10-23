@@ -203,13 +203,13 @@ nav a:hover{
     .contact-details a {
         color: #333;
     }
-        .btn-div {
-        display: flex;
-        justify-content: center;
-    }
         .container-grey {
         background: $thirdColor;
         padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
         .above-btn {
         display: flex;
@@ -217,7 +217,7 @@ nav a:hover{
         margin: 0 25px;
     }
         .above-btn p{
-            font-size: 14px;
+        font-size: 14px;
     }
         .formbox {
         background: #D9D9D9;
@@ -258,27 +258,8 @@ nav a:hover{
         gap: 1rem;
         justify-content: center;
     }
-        .qnabtn {
-        background-color: $primaryColor;
-        color: $fifthColor;
-        border: none;
-        padding: 0.7rem 1.5rem;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 20px;
-        // margin-bottom: 2rem;
-        text-decoration: none;
-        width: 215px;
-        margin: 10px;
-    }
-
-    .qnabtn a:hover {
+    .contactbtn:hover {
         text-decoration: underline;
-    }
-
-    .qnabtn a {
-        text-decoration: none;
-        color: $fourthColor;
     }
 
     .contactbtn {
@@ -291,23 +272,8 @@ nav a:hover{
         border-radius: 20px;
         // margin-bottom: 1.3rem;
         text-decoration: none;
-        margin: 10px;
-    }
-
-    .contactbtn a{
-        background-color: $primaryColor;
-        color: $fourthColor;
-        border: none;
-        padding: 0.7rem 1.5rem;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 4px;
-        margin-bottom: 1.3rem;
-        text-decoration: none;
-    }
-
-    .contactbtn a:hover {
-        text-decoration: underline;
+        margin: 25px;
+        width: 180px;
     }
 }
 /* Kontaktsida slut */
@@ -335,42 +301,24 @@ nav a:hover{
     .answer {
         margin: 25px;
     }
-    .qnabtn a{
-        text-decoration: none;
-        color: $fifthColor;
-    }
-    .homebtn {
-        margin: 25px;
+    .btndiv {
         display: flex;
         justify-content: center;
     }
-        .contactbtn {
-        background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
-        color: $fifthColor;
-        border: none;
-        padding: 0.7rem 1.5rem;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 20px;
-        margin-bottom: 1.3rem;
-        text-decoration: none;
-        /* margin: 25px; */
+    .contactbtn:hover {
+        text-decoration: underline;
     }
-
-    .contactbtn a{
-        background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
+    .contactbtn {
+        background-color: $primaryColor;
         color: $fourthColor;
         border: none;
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
         cursor: pointer;
-        border-radius: 4px;
-        margin-bottom: 1.3rem;
+        border-radius: 20px;
         text-decoration: none;
-    }
-
-    .contactbtn a:hover {
-        text-decoration: underline;
+        margin: 25px;
+        width: 180px;
     }
 }
 /* Q&A sida slut */

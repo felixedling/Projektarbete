@@ -191,10 +191,9 @@ nav a:hover {
 }
 .container-contact figcaption {
   font-size: 0.6rem;
-  color: #666;
+  color: #333;
   margin-top: 0.5rem;
   text-align: center;
-  opacity: 75%;
   font-size: 12px;
 }
 .container-contact .contact-details {
@@ -225,13 +224,13 @@ nav a:hover {
 .container-contact .contact-details a {
   color: #333;
 }
-.container-contact .btn-div {
-  display: flex;
-  justify-content: center;
-}
 .container-contact .container-grey {
   background: rgb(243, 239, 239);
   padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container-contact .above-btn {
   display: flex;
@@ -279,24 +278,8 @@ nav a:hover {
   gap: 1rem;
   justify-content: center;
 }
-.container-contact .qnabtn {
-  background-color: #ff9505;
-  color: #333;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 20px;
-  text-decoration: none;
-  width: 215px;
-  margin: 10px;
-}
-.container-contact .qnabtn a:hover {
+.container-contact .contactbtn:hover {
   text-decoration: underline;
-}
-.container-contact .qnabtn a {
-  text-decoration: none;
-  color: white;
 }
 .container-contact .contactbtn {
   background-color: #ff9505;
@@ -307,21 +290,8 @@ nav a:hover {
   cursor: pointer;
   border-radius: 20px;
   text-decoration: none;
-  margin: 10px;
-}
-.container-contact .contactbtn a {
-  background-color: #ff9505;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 1.3rem;
-  text-decoration: none;
-}
-.container-contact .contactbtn a:hover {
-  text-decoration: underline;
+  margin: 25px;
+  width: 180px;
 }
 
 /* Kontaktsida slut */
@@ -352,40 +322,24 @@ nav a:hover {
 .container-qna .answer {
   margin: 25px;
 }
-.container-qna .qnabtn a {
-  text-decoration: none;
-  color: #333;
-}
-.container-qna .homebtn {
-  margin: 25px;
+.container-qna .btndiv {
   display: flex;
   justify-content: center;
 }
-.container-qna .contactbtn {
-  background-color: rgb(234, 88, 12, var(--tw-bg-opacity, 1));
-  color: #333;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 20px;
-  margin-bottom: 1.3rem;
-  text-decoration: none;
-  /* margin: 25px; */
+.container-qna .contactbtn:hover {
+  text-decoration: underline;
 }
-.container-qna .contactbtn a {
-  background-color: rgb(234, 88, 12, var(--tw-bg-opacity, 1));
+.container-qna .contactbtn {
+  background-color: #ff9505;
   color: white;
   border: none;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 1.3rem;
+  border-radius: 20px;
   text-decoration: none;
-}
-.container-qna .contactbtn a:hover {
-  text-decoration: underline;
+  margin: 25px;
+  width: 180px;
 }
 
 /* Q&A sida slut */
@@ -396,6 +350,7 @@ nav a:hover {
   color: #ff9505;
   display: flex;
   text-decoration: none;
+  margin: 25px;
 }
 .toptext .projects {
   color: #ff9505;
@@ -404,14 +359,17 @@ nav a:hover {
   text-align: center;
   margin-top: 10px;
 }
-.toptext .belowtitle {
+.toptext .above-img {
   display: flex;
   flex-direction: column;
-  margin: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
   font-weight: normal;
 }
 
 .imgbox {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
 }
@@ -443,6 +401,9 @@ nav a:hover {
   width: 115px;
   height: 12vh;
 }
+.kpi-card .card img {
+  height: 20px;
+}
 .kpi-card p {
   font-size: 10px;
 }
@@ -450,6 +411,7 @@ nav a:hover {
 .testbox {
   display: flex;
   justify-content: center;
+  max-width: 1200px;
 }
 
 .grey-container {
@@ -1065,6 +1027,40 @@ nav a:hover {
   }
   .products-container .bot-container {
     width: 30vw;
+  }
+}
+@media (min-width: 1205px) {
+  .fullscreen-project {
+    display: flex;
+    flex-direction: row;
+  }
+  .fullscreen-project .projectimg {
+    width: 100px;
+  }
+  .fullscreen-project .above-img {
+    margin: 25px;
+    text-align: center;
+  }
+  .fullscreen-project .testbox {
+    width: 400px;
+    height: 850px;
+    justify-content: center;
+  }
+  .fullscreen-project .card {
+    width: 100px;
+  }
+  .toptext p {
+    visibility: hidden;
+  }
+  .fullscreen-contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .fullscreen-contact .fullscreen-div a:hover {
+    color: red;
   }
 }
 @media (680px <= width <= 850px) {

@@ -18,6 +18,7 @@ p, a {
 .container-header {
   width: 100vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -1065,7 +1066,7 @@ nav a:hover {
 }
 @media (max-width: 500px) {
   .products-container .bot-container p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .formbox {
     margin: 25px;

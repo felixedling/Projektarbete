@@ -697,7 +697,7 @@ nav a:hover {
   margin-bottom: 5px;
   font-size: 0.8rem;
 }
-.products-container .products-description p:last-of-type {
+.products-container .products-description p:first-of-type {
   font-weight: 700;
 }
 .products-container .bot-picture-assembly {

@@ -170,6 +170,7 @@ nav a:hover {
 .container-contact .contact-img {
   font-family: roboto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 25px;
@@ -192,6 +193,7 @@ nav a:hover {
 }
 .container-contact .contact-details {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   margin-left: 25px;
@@ -200,6 +202,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   margin: 25px;
   margin-left: 25px;
   margin-bottom: 25px;
@@ -320,6 +323,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: stretch;
 }
 .container-qna .qnabackground {
   background-image: url(./images/frontpage-bg.png);
@@ -406,6 +410,7 @@ nav a:hover {
 }
 .imgbox .imgclass {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -488,6 +493,7 @@ nav a:hover {
   width: 10vw;
   margin: 10px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
@@ -570,6 +576,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
   margin: 25px;
   gap: 10px;
@@ -666,6 +673,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
 }
 .products-container .products-description.description1 p {
   margin-bottom: 5px;
@@ -676,6 +684,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
 }
 .products-container .products-description p {
   margin-bottom: 5px;
@@ -745,6 +754,7 @@ nav a:hover {
 }
 .products-container .customizations {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 60px;
@@ -789,6 +799,7 @@ nav a:hover {
 }
 .products-container .basemodel {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 60px;
@@ -866,6 +877,7 @@ nav a:hover {
 }
 
 .frontpage-part1-container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1005,6 +1017,7 @@ nav a:hover {
   .frontpage-part1-text {
     margin-left: 25px;
     margin-right: 25px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1014,6 +1027,7 @@ nav a:hover {
     border-radius: 7.5%;
     margin-right: 25px;
     margin-left: 25px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1109,6 +1123,7 @@ nav a:hover {
 .header2 .container-header2 {
   width: 310px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -1243,6 +1258,7 @@ nav a:hover {
   align-items: center;
 }
 .frontpage-main-container .frontpage-part1-container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1305,6 +1321,7 @@ nav a:hover {
   .frontpage-main-container .frontpage-part1-text {
     width: 40vw;
     max-width: 450px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1318,6 +1335,7 @@ nav a:hover {
   .frontpage-main-container .frontpage-bot {
     width: 40vw;
     max-width: 450px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1356,6 +1374,7 @@ nav a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -1369,6 +1388,7 @@ nav a:hover {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1450,6 +1470,7 @@ nav a:hover {
   margin-left: 15px;
   margin-top: 0px; /*????????????*/
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -1474,6 +1495,7 @@ nav a:hover {
 }
 .frontpage-main-container .viewallspecs-button-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
@@ -1485,6 +1507,7 @@ nav a:hover {
   border: 2px solid white;
   background-color: #fe5c02;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: roboto; /* Fungerar inte? */
@@ -1531,6 +1554,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: stretch;
   }
   .frontpage-main-container .testdiv1, .frontpage-main-container .testdiv2 {
     display: flex;
@@ -1560,6 +1584,7 @@ nav a:hover {
   width: 100vw;
   padding: 75px 0px 50px 0px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -1633,6 +1658,7 @@ nav a:hover {
     height: 160px;
     width: 310px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }

@@ -53,6 +53,11 @@ header {
   margin-left: 25px;
 }
 
+.leftside a {
+  text-decoration: none;
+  color: black;
+}
+
 .rightside {
   display: flex;
   flex-direction: row;

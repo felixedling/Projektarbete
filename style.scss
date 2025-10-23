@@ -45,6 +45,11 @@ header {
     margin-left: 25px;
 }
 
+.leftside a {
+    text-decoration: none;
+    color: black;
+}
+
 .rightside {
     @include flex(row,flex-end,center);
     width: 60vw;

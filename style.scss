@@ -46,6 +46,11 @@ header {
     margin-left: 25px;
 }
 
+.leftside a {
+    text-decoration: none;
+    color: black;
+}
+
 .rightside {
     @include flex(row,flex-end,center);
     width: 60vw;
@@ -655,7 +660,7 @@ nav a:hover{
         margin-bottom: 5px;
         font-size: 0.8rem;
     }
-    .products-description p:last-of-type {
+    .products-description p:first-of-type {
         font-weight: 700;
     }
     .bot-picture-assembly {

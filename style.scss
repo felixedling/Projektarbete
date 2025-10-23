@@ -1128,14 +1128,7 @@ nav a:hover{
 
 //ERIKS CSS-FIL
 
-    /* HEADER startsida*/
-.container-header2 {
-    width: 310px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+    /* HEADER frontpage*/
 
 .header2 {
     position: sticky;
@@ -1152,668 +1145,672 @@ nav a:hover{
     height: 50px;
     border-bottom: 1px solid black;
     z-index: 2;
-}
 
-.logo2 {
-    height: 25px;
-    width: 25px;
-    margin-right: 25px;
-}
-
-.leftside2 {
+    .container-header2 {
+    width: 310px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-}
-
-.rightside2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    height: 50px;
-    font-size: 18px;
-    margin-right: 0px;
-}
-
-#menu-toggle2 {
-    display: none;
-}
-
-  /* Hamburgerknappen */
-.hamburgermenu2 {
-    width: 30px;
-    cursor: pointer;
-    z-index: 2;
-    position: relative;
-}
-
-.hamburgermenu2 .bar4,
-.hamburgermenu2 .bar5,
-.hamburgermenu2 .bar6 {
-    height: 3px;
-    width: 100%;
-    background-color: #333;
-    margin: 5px 0;
-    transition: 0.3s;
-    display: flex;
-    border-radius: 1.5px;
-}
-
-.overlay2 {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px; /* tom rad högst upp */
-    cursor: pointer;
-    z-index: 1;
-}
-
-  /* Menyn */
-.nav2 {
-    display: none;
-    flex-direction: column;
-    /* "align-items: center" här? */
-    background: #f2f2f2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 50px; /* ge plats för overlay */
-    z-index: 1;
-}
-
-.nav2 a {
-    text-decoration: none;
-    color: #333;
-    padding: 12px;
-    border-top: 1px solid #ccc;
-}
-
-.nav2 a:hover{
-    border-radius: 10px;
-    background: white;
-    color: #fe5c02;
-    text-decoration: underline;
-}
-
-  /* Visa menyn när checkboxen är ibockad */
-#menu-toggle2:checked + label + .overlay2,
-#menu-toggle2:checked + label + .overlay2 + .nav2 {
-    display: flex;
-}
-
-  /* Animera hamburger till X när öppen */
-#menu-toggle2:checked + label .bar4 {
-    transform: rotate(45deg) translate(6px, 6px);
-}
-#menu-toggle2:checked + label .bar5 {
-    opacity: 0;
-}
-#menu-toggle2:checked + label .bar6 {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-  /* Desktop-läge: visa alltid menyn inline och göm hamburger */
-@media (min-width: 768px) {
-    .hamburgermenu2 {
-        display: none;
     }
-    .nav2 {
+
+    .logo2 {
+        height: 25px;
+        width: 25px;
+        margin-right: 25px;
+    }
+
+    .leftside2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .rightside2 {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        background: none;
-        position: relative;
-        padding-top: 0px;
-    }
-    .nav2 a {
-        border: none;
-        padding: 0px; 
-        margin-left: 24px; /*ändrade padding till margin-left för att linjera med sidomargins */    
-        font-size: 16px; 
+        height: 50px;
+        font-size: 18px;
+        margin-right: 0px;
     }
 
-    .container-header2 { 
-    width: calc(80vw + 50px); /*Ändra här för header margins/alignment */
-    max-width: 950px;
-    }
-    
-}
-
-    /* HEADER startsida SLUT*/
-
-/* Ändringar Erik */
-/* Part-1 */
-
-.frontpage-part1-bg {
-    background-image: url(./images/frontpage-bg.png);
-    width: 100vw;
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.frontpage-part1-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.frontpage-part1-text {
-    width: 310px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.frontpage-bot {
-    width: 310px;
-    border-radius: 7.5%;
-    margin-right: 25px;
-    margin-left: 25px;
-    filter: drop-shadow(0px 0px 10px #7f7f7f);
-}   
-
-.frontpage-part1-text h1 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.frontpage-part1-text p {
-    margin-bottom: 25px;
-}
-
-.demo-button {
-    width: 310px;
-    height: 50px;
-    margin-bottom: 25px;
-    border-radius: 25px;
-    background-color: #fe5c02;
-    border: 3px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.demo-button-text {
-    color: white;
-    font-size: 14px;
-}
-
-.demo-button-text:hover {
-    text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-/* 
-    .frontpage-part1-bg {
-        background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
-        width: 100vw;
-    } */
-
-    .frontpage-part1-container {
-        height: calc(100vh - 50px);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0;
-    }
-
-    .frontpage-part1-text {
-        width: 40vw;
-        max-width: 450px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .frontpage-part1-text h1 {
-        margin-top: 0px;
-    }
-
-    .demo-button {
-        margin-bottom: 0px;
-    }
-
-    .frontpage-bot {
-        width: 40vw;
-        max-width: 450px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } 
-}  
-
-/* Part-2 */
-
-.why-workbot, .frontpage-part2-container1a p, .application-areas, .infobox-bot {
-    margin-bottom: 25px;
-}
-
-.frontpage-part2-bg {
-    background-color: #F3F3F3;
-    width: 100vw; /* Ta detta och gör samma i part1-bg för att få bort scrollen i viewporten. Något med denna property sabbar även header-alignmenten i mellanstor viewport*/
-}
-
-.frontpage-part2-container {
-    padding-top: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.frontpage-part2-container1a {
-    width: 310px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.frontpage-part2-infobox {
-    filter: drop-shadow(0px 0px 10px #7f7f7f); /* Funkar inte med sticky header */
-}
-
-.frontpage-part2-container1b {
-    width: 310px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.infobox-top {
-    background-color: #fe5c02;
-    height: 50px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.infobox-bot {
-    background-image: url(./images/frontpage-window-bg.png);
-    background-size: cover;
-    background-position: left;
-    height: 200px;
-    padding-right: 25px;
-    padding-left: 25px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-}
-
-.frontpage-part2-infobox p {
-    color: white;
-}
-
-@media (min-width: 768px) {
-    .frontpage-part2-container {
-        flex-direction: row;
-        height: 100vh; /* calc(100vh - 50px); */
-        padding-top: 0px;
-    }
-
-    .frontpage-part2-container1a, .frontpage-part2-container1b, .infobox-top, .infobox-bot {
-        width: 40vw;
-        max-width: 450px;
-    }
-
-    .infobox-bot, .frontpage-part2-container1a p {
-        margin-bottom: 0px;
-    }
-
-    .application-areas {
+    #menu-toggle2 {
         display: none;
     }
-}
 
-/* Part-3 */
-
-.frontpage-part3-bg {
-    background-color: white;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.frontpage-part3-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.frontpage-part3-text-container {
-    width: 310px;
-    margin-top: 75px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.the-workforce {
-    margin-bottom: 25px;
-}
-
-.frontpage-specsbox {
-    width: 310px;
-    height: 450px;
-    filter: drop-shadow(0px 0px 10px #7f7f7f);
-    margin-bottom: 50px;
-}
-
-.specsbox-top, .specsbox-top2, .specsbox-top3 {
-    background-size: cover;
-    background-position: bottom;
-    height: 173px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding-top: 15px;
-}
-
-.specsbox-top {
-    background-image: url(./images/cargo-bot.jpg);
-}
-
-.specsbox-top2 {
-    background-image: url(./images/assembly-bot.jpg);
-}
-
-.specsbox-top3 {
-    background-image: url(./images/construction-bot.jpg);
-}
-
-.specsbox-top p, .specsbox-top2 p, .specsbox-top3 p {
-    color: white;
-}
-
-.liftbot {
-    width: 90px;
-    height: 30px;
-    background-color: #fe5c02;
-    border-radius: 15px;
-    margin-left: 15px; 
-    margin-top: 0px; /*????????????*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.specsbox-bot {
-    height: 277px;
-    background-color: #F3F3F3;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.specsbox-description, .specsbox-description2, .specsbox-description3 {
-    height: 103px;
-    padding: 15px;
-    text-align: center;
-    font-size: 14px;
-}
-
-.specsbox-divider {
-    width: 280px;
-    height: 3px;
-    background-color: white;
-    border-radius: 1.5px;
-    margin: 5px 15px 5px 15px;  
-}
-
-.viewallspecs-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.viewallspecs-button {
-    width: 120px;
-    height: 30px;
-    border-radius: 15px;
-    border: 2px solid white;
-    background-color: #fe5c02;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: roboto; /* Fungerar inte? */
-}
-
-.specsbox-specs p {
-    font-size: 12px;
-}
-
-.specsbox-spec1, .specsbox-spec2, .specsbox-spec3, .specsbox-spec4 {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.part3-fullscreen-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.testdiv-container {
-    display: flex;
-}
-
-.testdiv1, .testdiv2 {
-    width: 310px;
-    display: flex;
-}
-
-.testdiv-container {
-    width: calc(80vw + 50px);
-    max-width: 950px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.testdiv-divider {
-    width: 50px;
-    height: 450px ;
-    display: none;
-}
-
-@media (min-width: 768px) {
-
-    .testdiv-container {
-    width: calc(80vw + 50px);
-    max-width: 950px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /* Hamburgerknappen */
+    .hamburgermenu2 {
+        width: 30px;
+        cursor: pointer;
+        z-index: 2;
+        position: relative;
     }
 
-    .testdiv1, .testdiv2 {
+    .hamburgermenu2 .bar4,
+    .hamburgermenu2 .bar5,
+    .hamburgermenu2 .bar6 {
+        height: 3px;
+        width: 100%;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.3s;
         display: flex;
+        border-radius: 1.5px;
+    }
+
+    .overlay2 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px; /* tom rad högst upp */
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /* Menyn */
+    .nav2 {
+        display: none;
+        flex-direction: column;
+        /* "align-items: center" här? */
+        background: #f2f2f2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 50px; /* ge plats för overlay */
+        z-index: 1;
+    }
+
+    .nav2 a {
+        text-decoration: none;
+        color: #333;
+        padding: 12px;
+        border-top: 1px solid #ccc;
+    }
+
+    .nav2 a:hover{
+        border-radius: 10px;
+        background: white;
+        color: #fe5c02;
+        text-decoration: underline;
+    }
+
+    /* Visa menyn när checkboxen är ibockad */
+    #menu-toggle2:checked + label + .overlay2,
+    #menu-toggle2:checked + label + .overlay2 + .nav2 {
+        display: flex;
+    }
+
+    /* Animera hamburger till X när öppen */
+    #menu-toggle2:checked + label .bar4 {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    #menu-toggle2:checked + label .bar5 {
+        opacity: 0;
+    }
+    #menu-toggle2:checked + label .bar6 {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* Desktop-läge: visa alltid menyn inline och göm hamburger */
+    @media (min-width: 768px) {
+        .hamburgermenu2 {
+            display: none;
+        }
+        .nav2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            background: none;
+            position: relative;
+            padding-top: 0px;
+        }
+        .nav2 a {
+            border: none;
+            padding: 0px; 
+            margin-left: 24px; /*ändrade padding till margin-left för att linjera med sidomargins */    
+            font-size: 16px; 
+        }
+
+        .container-header2 { 
+        width: calc(80vw + 50px); /*Ändra här för header margins/alignment */
+        max-width: 950px;
+        }    
+    }
+}
+
+    /* HEADER frontpage END*/
+
+/* FRONTPAGE START */
+/* Part-1 */
+
+.frontpage-main-container {
+    .frontpage-part1-bg {
+        background-image: url(./images/frontpage-bg.png);
+        width: 100vw;
+        background-size: cover;
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frontpage-part1-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 25px;
     }
 
-    .testdiv-divider {
+    .frontpage-part1-text {
+        width: 310px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .frontpage-bot {
+        width: 310px;
+        border-radius: 7.5%;
+        margin-right: 25px;
+        margin-left: 25px;
+        filter: drop-shadow(0px 0px 10px #7f7f7f);
+    }   
+
+    .frontpage-part1-text h1 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .frontpage-part1-text p {
+        margin-bottom: 25px;
+    }
+
+    .demo-button {
+        width: 310px;
+        height: 50px;
+        margin-bottom: 25px;
+        border-radius: 25px;
+        background-color: #fe5c02;
+        border: 3px solid white;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .demo-button-text {
+        color: white;
+        font-size: 14px;
+    }
+
+    .demo-button-text:hover {
+        text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+    /* 
+        .frontpage-part1-bg {
+            background-image: url("https://media.discordapp.net/attachments/1414675453058355290/1427630748063629322/8JwlPd1SeCAAAAAAAAALrK5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.png?ex=68ef903e&is=68ee3ebe&hm=2a6c56c0943b7b31fc4dfebefcf26f8bc589bcba2586e1822af5ad8d8d6d685e&=&format=webp&quality=lossless&width=1350&height=683");
+            width: 100vw;
+        } */
+
+        .frontpage-part1-container {
+            height: calc(100vh - 50px);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .frontpage-part1-text {
+            width: 40vw;
+            max-width: 450px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .frontpage-part1-text h1 {
+            margin-top: 0px;
+        }
+
+        .demo-button {
+            margin-bottom: 0px;
+        }
+
+        .frontpage-bot {
+            width: 40vw;
+            max-width: 450px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } 
+    }  
+
+    /* Part-2 */
+
+    .why-workbot, .frontpage-part2-container1a p, .application-areas, .infobox-bot {
+        margin-bottom: 25px;
+    }
+
+    .frontpage-part2-bg {
+        background-color: #F3F3F3;
+        width: 100vw; /* Ta detta och gör samma i part1-bg för att få bort scrollen i viewporten. Något med denna property sabbar även header-alignmenten i mellanstor viewport*/
+    }
+
+    .frontpage-part2-container {
+        padding-top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frontpage-part2-container1a {
+        width: 310px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .frontpage-part2-infobox {
+        filter: drop-shadow(0px 0px 10px #7f7f7f); /* Funkar inte med sticky header */
+    }
+
+    .frontpage-part2-container1b {
+        width: 310px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .infobox-top {
+        background-color: #fe5c02;
+        height: 50px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infobox-bot {
+        background-image: url(./images/frontpage-window-bg.png);
+        background-size: cover;
+        background-position: left;
+        height: 200px;
+        padding-right: 25px;
+        padding-left: 25px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .frontpage-part2-infobox p {
+        color: white;
+    }
+
+    @media (min-width: 768px) {
+        .frontpage-part2-container {
+            flex-direction: row;
+            height: 100vh; /* calc(100vh - 50px); */
+            padding-top: 0px;
+        }
+
+        .frontpage-part2-container1a, .frontpage-part2-container1b, .infobox-top, .infobox-bot {
+            width: 40vw;
+            max-width: 450px;
+        }
+
+        .infobox-bot, .frontpage-part2-container1a p {
+            margin-bottom: 0px;
+        }
+
+        .application-areas {
+            display: none;
+        }
+    }
+
+    /* Part-3 */
+
+    .frontpage-part3-bg {
+        background-color: white;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .frontpage-part3-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frontpage-part3-text-container {
+        width: 310px;
+        margin-top: 75px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .the-workforce {
+        margin-bottom: 25px;
+    }
+
+    .frontpage-specsbox {
+        width: 310px;
+        height: 450px;
+        filter: drop-shadow(0px 0px 10px #7f7f7f);
+        margin-bottom: 50px;
+    }
+
+    .specsbox-top, .specsbox-top2, .specsbox-top3 {
+        background-size: cover;
+        background-position: bottom;
+        height: 173px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding-top: 15px;
+    }
+
+    .specsbox-top {
+        background-image: url(./images/cargo-bot.jpg);
+    }
+
+    .specsbox-top2 {
+        background-image: url(./images/assembly-bot.jpg);
+    }
+
+    .specsbox-top3 {
+        background-image: url(./images/construction-bot.jpg);
+    }
+
+    .specsbox-top p, .specsbox-top2 p, .specsbox-top3 p {
+        color: white;
+    }
+
+    .liftbot {
+        width: 90px;
+        height: 30px;
+        background-color: #fe5c02;
+        border-radius: 15px;
+        margin-left: 15px; 
+        margin-top: 0px; /*????????????*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .specsbox-bot {
+        height: 277px;
+        background-color: #F3F3F3;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .specsbox-description, .specsbox-description2, .specsbox-description3 {
+        height: 103px;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .specsbox-divider {
+        width: 280px;
+        height: 3px;
+        background-color: white;
+        border-radius: 1.5px;
+        margin: 5px 15px 5px 15px;  
+    }
+
+    .viewallspecs-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .viewallspecs-button {
+        width: 120px;
+        height: 30px;
+        border-radius: 15px;
+        border: 2px solid white;
+        background-color: #fe5c02;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: roboto; /* Fungerar inte? */
+    }
+
+    .specsbox-specs p {
+        font-size: 12px;
+    }
+
+    .specsbox-spec1, .specsbox-spec2, .specsbox-spec3, .specsbox-spec4 {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .part3-fullscreen-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testdiv-container {
+        display: flex;
+    }
+
+    .testdiv1, .testdiv2 {
+        width: 310px;
+        display: flex;
+    }
+
+    .testdiv-container {
+        width: calc(80vw + 50px);
+        max-width: 950px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .testdiv-divider {
+        width: 50px;
+        height: 450px ;
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+
+        .testdiv-container {
         width: calc(80vw + 50px);
         max-width: 950px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
-        margin-top: 75px;
+        }
+
+        .testdiv1, .testdiv2 {
+            display: flex;
+            margin-bottom: 25px;
+        }
+
+        .testdiv-divider {
+            display: flex;
+        }
+
+        .frontpage-part3-container {
+            width: calc(80vw + 50px);
+            max-width: 950px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 75px;
+        }
+
+        .frontpage-specsbox {
+            margin-bottom: 50px;
+        }
+
+        .frontpage-part3-text-container {
+            margin-top: 0px;
+        }
+
+        
     }
 
-    .frontpage-specsbox {
-        margin-bottom: 50px;
-    }
-
-    .frontpage-part3-text-container {
-        margin-top: 0px;
-    }
-
-    
-}
-
-/* Part 4 */
-
-.frontpage-part4-bg {
-    background-color:#F3F3F3;
-    width: 100vw;
-    padding: 75px 0px 50px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.frontpage-part4-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.frontpage-part4-text {
-    width: 310px;
-}
-
-.our-heading {
-    display: inline-block;
-    margin-bottom: 12.5px;
-}
-
-.Projects-heading {
-    display: inline-block;
-    color: #fe5c02;
-}
-
-.frontpage-project1, .frontpage-project2, .frontpage-project3 {
-    width: 310px;
-}
-
-.project-heading {
-    margin-bottom: 12.5px;
-}
-
-.project-quote {
-    font-style: italic;
-    font-weight: lighter;
-    margin-bottom: 25px;
-}
-
-.more-projects {
-    width: 310px;
-    height: 50px;
-    margin-bottom: 25px;
-    border-radius: 25px;
-    background-color: #fe5c02;
-    border: 3px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.part4-divider {
-    display: none;
-}
-
-@media (min-width: 768px) {
+    /* Part 4 */
 
     .frontpage-part4-bg {
-        height: 100vh;
+        background-color:#F3F3F3;
+        width: 100vw;
+        padding: 75px 0px 50px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .frontpage-part4-container {
-        width: calc(80vw + 50px);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .part4-fullscreen-container1, .part4-fullscreen-container2 {
-        width: 40vw;
-        max-width: 450px;
         display: flex;
         flex-direction: column;
-    }
-
-    .part4-fullscreen-container1 {
-        margin-right: 25px;
-    }
-
-    .part4-fullscreen-container2 {
-        margin-left: 25px;
-    }
-
-    .part4-button-container {
-        height: 160px;
-        width: 310px;
-        display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 
-    .frontpage-project1, .frontpage-project3 {
-        height: 232.5px;
+    .frontpage-part4-text {
+        width: 310px;
     }
 
-    .frontpage-project2 {
-        height: 160px;
+    .our-heading {
+        display: inline-block;
+        margin-bottom: 12.5px;
+    }
+
+    .Projects-heading {
+        display: inline-block;
+        color: #fe5c02;
+    }
+
+    .frontpage-project1, .frontpage-project2, .frontpage-project3 {
+        width: 310px;
+    }
+
+    .project-heading {
+        margin-bottom: 12.5px;
+    }
+
+    .project-quote {
+        font-style: italic;
+        font-weight: lighter;
+        margin-bottom: 25px;
     }
 
     .more-projects {
-        margin-bottom: 0px;
-    }
-
-    .frontpage-project1, .frontpage-project2, .frontpage-project3, .part4-button-container {
-        width: 40vw;
-        max-width: 450px;
-    }
-
-    .project-quote, .part4-button-container {
-        margin-bottom: 0px;
+        width: 310px;
+        height: 50px;
+        margin-bottom: 25px;
+        border-radius: 25px;
+        background-color: #fe5c02;
+        border: 3px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .part4-divider {
-        width: 40vw;
-        display: flex;
-        height: 42.1px;
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+
+        .frontpage-part4-bg {
+            height: 100vh;
+        }
+
+        .frontpage-part4-container {
+            width: calc(80vw + 50px);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .part4-fullscreen-container1, .part4-fullscreen-container2 {
+            width: 40vw;
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .part4-fullscreen-container1 {
+            margin-right: 25px;
+        }
+
+        .part4-fullscreen-container2 {
+            margin-left: 25px;
+        }
+
+        .part4-button-container {
+            height: 160px;
+            width: 310px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .frontpage-project1, .frontpage-project3 {
+            height: 232.5px;
+        }
+
+        .frontpage-project2 {
+            height: 160px;
+        }
+
+        .more-projects {
+            margin-bottom: 0px;
+        }
+
+        .frontpage-project1, .frontpage-project2, .frontpage-project3, .part4-button-container {
+            width: 40vw;
+            max-width: 450px;
+        }
+
+        .project-quote, .part4-button-container {
+            margin-bottom: 0px;
+        }
+
+        .part4-divider {
+            width: 40vw;
+            display: flex;
+            height: 42.1px;
+        }
     }
 }
 
 /* ATT GÖRA */
 /*  
-    Fixa så headern går över elementen
-    Aria-labels
-    Länkar
     Fixa footern
     Kolla WCAG
     Lägg till pilar till vissa boxar
     Kanske lägga en ruta/bakgrund runt produktdelen
     Fixa "viewallspecs-knappens" font
-    Döpa om testdivar
 /*
 
-/* Ändringar Erik SLUT */
+/* FRONTPAGE END */

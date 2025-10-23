@@ -225,13 +225,13 @@ nav a:hover {
 .container-contact .contact-details a {
   color: #333;
 }
-.container-contact .btn-div {
-  display: flex;
-  justify-content: center;
-}
 .container-contact .container-grey {
   background: rgb(243, 239, 239);
   padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container-contact .above-btn {
   display: flex;
@@ -279,24 +279,8 @@ nav a:hover {
   gap: 1rem;
   justify-content: center;
 }
-.container-contact .qnabtn {
-  background-color: #ff9505;
-  color: #333;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 20px;
-  text-decoration: none;
-  width: 215px;
-  margin: 10px;
-}
-.container-contact .qnabtn a:hover {
+.container-contact .contactbtn:hover {
   text-decoration: underline;
-}
-.container-contact .qnabtn a {
-  text-decoration: none;
-  color: white;
 }
 .container-contact .contactbtn {
   background-color: #ff9505;
@@ -307,21 +291,8 @@ nav a:hover {
   cursor: pointer;
   border-radius: 20px;
   text-decoration: none;
-  margin: 10px;
-}
-.container-contact .contactbtn a {
-  background-color: #ff9505;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 1.3rem;
-  text-decoration: none;
-}
-.container-contact .contactbtn a:hover {
-  text-decoration: underline;
+  margin: 25px;
+  width: 180px;
 }
 
 /* Kontaktsida slut */
@@ -352,40 +323,24 @@ nav a:hover {
 .container-qna .answer {
   margin: 25px;
 }
-.container-qna .qnabtn a {
-  text-decoration: none;
-  color: #333;
-}
-.container-qna .homebtn {
-  margin: 25px;
+.container-qna .btndiv {
   display: flex;
   justify-content: center;
 }
-.container-qna .contactbtn {
-  background-color: rgb(234, 88, 12, var(--tw-bg-opacity, 1));
-  color: #333;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 20px;
-  margin-bottom: 1.3rem;
-  text-decoration: none;
-  /* margin: 25px; */
+.container-qna .contactbtn:hover {
+  text-decoration: underline;
 }
-.container-qna .contactbtn a {
-  background-color: rgb(234, 88, 12, var(--tw-bg-opacity, 1));
+.container-qna .contactbtn {
+  background-color: #ff9505;
   color: white;
   border: none;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 1.3rem;
+  border-radius: 20px;
   text-decoration: none;
-}
-.container-qna .contactbtn a:hover {
-  text-decoration: underline;
+  margin: 25px;
+  width: 180px;
 }
 
 /* Q&A sida slut */

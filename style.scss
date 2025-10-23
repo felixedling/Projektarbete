@@ -19,9 +19,7 @@ p,a {
     /* HEADER START */
 .container-header {
     width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row,space-between,center)
 }
 
 header {
@@ -1110,7 +1108,7 @@ nav a:hover{
 @media (max-width:500px) {
     .products-container {
         .bot-container p {
-            font-size: 10px;
+            font-size: 12px;
         }
     }
     .formbox {

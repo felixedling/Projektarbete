@@ -989,6 +989,9 @@ nav a:hover{
             width: 100px;
         }
     }
+        .toptext p {
+        visibility: hidden;
+        }
     .fullscreen-contact {
         display: flex;
         flex-direction:row-reverse;

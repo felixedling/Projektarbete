@@ -1030,6 +1030,15 @@ nav a:hover{
     }
 }
 
+@media (min-width:1300px) {
+    .about-container {
+        .bilderpersonal img {
+            width: 340px;
+            height: 340px;
+        }
+    }
+}
+
 @media (max-width:500px) {
     .products-container {
         .bot-container p {
